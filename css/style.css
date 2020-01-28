@@ -253,8 +253,22 @@ body{
     background-size: cover;
 }
 
+.types_holidays__item{
+    flex:1 1 auto;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 40px 0;
+}
+
+.types_holidays__item:hover{
+    border: 1px solid #CDCFD8;
+}
+
 .types_holidays__ul{
     min-height: 270px;
+    width: 100%;
+    padding: 0;
 }
 
 .types_holidays__li{
@@ -262,11 +276,24 @@ body{
     font-weight: normal;
     font-size: 12px;
     line-height: 191%;
+    list-style-type: none;
+    padding: 0 0 0 19px;
+
+}
+
+.types_holidays__li.circle::before{
+    color: #5e5e5e; /* Цвет маркера */
+    content: "●"; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+}
+
+.grey{
+    background: #EEEEEE;
 }
 
 .types_holidays__btn{
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     background: #FDD700;
     border-radius: 105px;
@@ -277,5 +304,19 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
 
+.types_holidays__btn:hover{
+    background: red;
+    color: #ffffff;
+}
+
+.no-circle{
+    height: 22px;
+}
+
+.white{
+    height: 44px;
 }
