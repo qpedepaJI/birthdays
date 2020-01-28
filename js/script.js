@@ -10,12 +10,7 @@ $(document).ready(function() {
         setWrapperSize:true,
         centeredSlides:true,
         slidesPerView:1,
-
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+        dots:false,
 
         // Navigation arrows
         navigation: {

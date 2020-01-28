@@ -9,7 +9,7 @@ body{
 }
 
 .main_wrapper{
-    width: 1280px;
+    width: 1112px;
     margin: 0 auto;
 }
 
@@ -392,4 +392,168 @@ body{
     justify-content: space-around;
 
 }
+
+.additional_btn{
+    width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #F10000;
+    border-radius: 105px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.additional_btn:hover{
+    background: #d00000;
+}
+
+.quests_section__title{
+    color: #000;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166.19%;
+    padding: 80px 0 30px 0;
+}
+
+.quests_section__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quests_section__quest{
+    width: 370px;
+    height: 270px;
+    position: relative;
+}
+
+.quests_section__quest_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.quests_section__quest_age{
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    width: 42px;
+    height: 42px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #ff4632;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quests_section__quest_title{
+    position: absolute;
+    left: 18px;
+    bottom: 92px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 168.19%;
+}
+
+.quests_section__quest_buttons{
+    position: absolute;
+    left: 18px;
+    bottom: 48px;
+    display: flex;
+    width: calc(100% - 34px);
+    justify-content: space-between;
+}
+
+.quests_section__btn.details{
+    width: 200px;
+    height: 36px;
+    background: #F10000;
+    border-radius: 106px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quests_section__btn.launzh{
+    width: 92px;
+    height: 36px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 106px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.quests_section__quest_address{
+    position: absolute;
+    bottom: -4px;
+    padding: 5px 0px 0 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.37);
+    width: calc(100% - 34px);
+    left: 17px;
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+.quest_address__street_container{
+    display: flex;
+}
+
+.quest_address__street_icon{
+    background: url('../images/icons/street.png')no-repeat;
+    width: 17px;
+    height: 13px;
+    margin-top: 2px;
+}
+
+.quest_address__subway_container{
+    display: flex;
+}
+
+.quest_address__subway_icon{
+    background: url('../images/icons/subway.png')no-repeat;
+    width: 19px;
+    height: 13px;
+    margin-top: 2px;
+
+}
+
+.quests_section__quest_overlay{
+    width: 349px;
+    height: 267px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(50, 6, 6, 0) 0%, rgba(0, 0, 0, 0.80) 100%);
+    border-radius: 10px;
+    bottom: 8px;
+    left: 11px;
+}
+
+
 
