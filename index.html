@@ -5,7 +5,9 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link href="css/style.css" rel="stylesheet" type="text/css" >
+
 	
 	<title>Дни рождения</title>
 </head>
@@ -61,110 +63,203 @@
 
             </div>
         </div>
+        <div class="types_holidays">
+            <div class="types_holidays__title">
+                Выберите один из вариантов праздника
+            </div>
+            <div class="types_holidays__description">
+                Время 2 часа (1 час игра в квест, 1 час аренда лаунжа)
+            </div>
 
+            <div class="types_holidays__container">
+                <div class="types_holidays__item">
+                    <div class="types_holidays__item_img hit"></div>
+                    <div class="types_holidays__item_title">Хит</div>
+                    <div class="types_holidays__item_time">2 часа</div>
+                    <div class="types_holidays__item_price">от <span>4 900</span> р</div>
+                    <div class="types_holidays__descriptions">
+                        <ul class="types_holidays__ul">
+                            <li class="types_holidays__li grey circle">Игра в квест</li>
+                            <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                            <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                            <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                            <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                            <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
+                            <li class="types_holidays__li grey no-circle"></li>
+                            <li class="types_holidays__li white no-circle"></li>
+                            <li class="types_holidays__li grey no-circle"></li>
+                        </ul>
+                    </div>
+                    <div class="types_holidays__btn">Забронировать</div>
+                </div>
+
+
+                <div class="types_holidays__item">
+                    <div class="types_holidays__item_img optima"></div>
+                    <div class="types_holidays__item_title">Оптима</div>
+                    <div class="types_holidays__item_time">2 часа</div>
+                    <div class="types_holidays__item_price">от <span>6 900</span> р</div>
+                    <div class="types_holidays__descriptions">
+                        <ul class="types_holidays__ul">
+                            <li class="types_holidays__li grey circle">Игра в квест</li>
+                            <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                            <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                            <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                            <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                            <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
+                            <li class="types_holidays__li grey circle">Аниматор в квесте</li>
+                            <li class="types_holidays__li white no-circle"></li>
+                            <li class="types_holidays__li grey no-circle"></li>
+                        </ul>
+                    </div>
+                    <div class="types_holidays__btn">Забронировать</div>
+                </div>
+
+
+                <div class="types_holidays__item">
+                    <div class="types_holidays__item_img maximum"></div>
+                    <div class="types_holidays__item_title">Максимум</div>
+                    <div class="types_holidays__item_time">2 часа</div>
+                    <div class="types_holidays__item_price">от <span>9 900</span> р</div>
+                    <div class="types_holidays__descriptions">
+                        <ul class="types_holidays__ul">
+                            <li class="types_holidays__li grey circle">Игра в квест</li>
+                            <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                            <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                            <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                            <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                            <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
+                            <li class="types_holidays__li grey circle">Аниматор в квесте</li>
+                            <li class="types_holidays__li white circle">Мастер-класс на выбор</li>
+                            <li class="types_holidays__li grey no-circle"></li>
+                        </ul>
+                    </div>
+                    <div class="types_holidays__btn">Забронировать</div>
+                </div>
+
+                <div class="types_holidays__item">
+                    <div class="types_holidays__item_img allinclusive"></div>
+                    <div class="types_holidays__item_title">Все включено</div>
+                    <div class="types_holidays__item_time">2 часа</div>
+                    <div class="types_holidays__item_price">от <span>12 900</span> р</div>
+                    <div class="types_holidays__descriptions">
+                        <ul class="types_holidays__ul">
+                            <li class="types_holidays__li grey circle">Игра в квест</li>
+                            <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                            <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                            <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                            <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                            <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
+                            <li class="types_holidays__li grey circle">Аниматор в квесте</li>
+                            <li class="types_holidays__li circle">Мастер-класс или Химическое<br>
+                                шоу на выбор</li>
+                            <li class="types_holidays__li grey circle">Профессиональный фотограф</li>
+                        </ul>
+                    </div>
+                    <div class="types_holidays__btn">Забронировать</div>
+                </div>
+            </div>
+        </div>
 	</div>
-    <div class="types_holidays">
-        <div class="types_holidays__title">
-            Выберите один из вариантов праздника
+
+    <div class="additional_section">
+        <div class="additional_section__title">
+            Дополнительные услуги
         </div>
-        <div class="types_holidays__description">
-            Время 2 часа (1 час игра в квест, 1 час аренда лаунжа)
+        <div class="additional_section__sliders swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide__container">
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide__container">
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                    <div class="additional_section__slider">
+                        <img class="additional_section__slider_img" alt="default" src="images/sliders/slider.png">
+                        <div class="additional_section__slider_container">
+                            <div class="additional_section__slider_title">Научное шоу</div>
+                            <div class="additional_section__slider_description">за 15 мин.</div>
+                            <div class="additional_section__slider_price">300 Р</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+
         </div>
+        <div class="additional_btn">Выбрать</div>
 
-        <div class="types_holidays__container">
-            <div class="types_holidays__item">
-                <div class="types_holidays__item_img hit"></div>
-                <div class="types_holidays__item_title">Хит</div>
-                <div class="types_holidays__item_time">2 часа</div>
-                <div class="types_holidays__item_price">от <span>4 900</span> р</div>
-                <div class="types_holidays__descriptions">
-                    <ul class="types_holidays__ul">
-                        <li class="types_holidays__li grey circle">Игра в квест</li>
-                        <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                        <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
-                        <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                        <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                        <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                        <li class="types_holidays__li grey no-circle"></li>
-                        <li class="types_holidays__li white no-circle"></li>
-                        <li class="types_holidays__li grey no-circle"></li>
-                    </ul>
-                </div>
-                <div class="types_holidays__btn">Забронировать</div>
-            </div>
-
-
-            <div class="types_holidays__item">
-                <div class="types_holidays__item_img optima"></div>
-                <div class="types_holidays__item_title">Оптима</div>
-                <div class="types_holidays__item_time">2 часа</div>
-                <div class="types_holidays__item_price">от <span>6 900</span> р</div>
-                <div class="types_holidays__descriptions">
-                    <ul class="types_holidays__ul">
-                        <li class="types_holidays__li grey circle">Игра в квест</li>
-                        <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                        <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
-                        <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                        <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                        <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                        <li class="types_holidays__li grey circle">Аниматор в квесте</li>
-                        <li class="types_holidays__li white no-circle"></li>
-                        <li class="types_holidays__li grey no-circle"></li>
-                    </ul>
-                </div>
-                <div class="types_holidays__btn">Забронировать</div>
-            </div>
-
-
-            <div class="types_holidays__item">
-                <div class="types_holidays__item_img maximum"></div>
-                <div class="types_holidays__item_title">Максимум</div>
-                <div class="types_holidays__item_time">2 часа</div>
-                <div class="types_holidays__item_price">от <span>9 900</span> р</div>
-                <div class="types_holidays__descriptions">
-                    <ul class="types_holidays__ul">
-                        <li class="types_holidays__li grey circle">Игра в квест</li>
-                        <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                        <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
-                        <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                        <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                        <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                        <li class="types_holidays__li grey circle">Аниматор в квесте</li>
-                        <li class="types_holidays__li white circle">Мастер-класс на выбор</li>
-                        <li class="types_holidays__li grey no-circle"></li>
-                    </ul>
-                </div>
-                <div class="types_holidays__btn">Забронировать</div>
-            </div>
-
-            <div class="types_holidays__item">
-                <div class="types_holidays__item_img allinclusive"></div>
-                <div class="types_holidays__item_title">Все включено</div>
-                <div class="types_holidays__item_time">2 часа</div>
-                <div class="types_holidays__item_price">от <span>12 900</span> р</div>
-                <div class="types_holidays__descriptions">
-                    <ul class="types_holidays__ul">
-                        <li class="types_holidays__li grey circle">Игра в квест</li>
-                        <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                        <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
-                        <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                        <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                        <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                        <li class="types_holidays__li grey circle">Аниматор в квесте</li>
-                        <li class="types_holidays__li circle">Мастер-класс или Химическое<br>
-                            шоу на выбор</li>
-                        <li class="types_holidays__li grey circle">Профессиональный фотограф</li>
-                    </ul>
-                </div>
-                <div class="types_holidays__btn">Забронировать</div>
-            </div>
-        </div>
     </div>
+
 </div>
 
 <footer>
 
 </footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
