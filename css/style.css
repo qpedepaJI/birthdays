@@ -326,6 +326,11 @@ body{
     width: 100%;
 }
 
+.additional_section__sliders{
+    height: 340px;
+
+}
+
 .additional_section__slider{
     color: #000;
     display: flex;
@@ -380,11 +385,20 @@ body{
 }
 
 .swiper-container{
-    width: 1300px;
-    height: 340px;
+
+    width: 1300px
 }
 
 .swiper-slide__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1112px!important;
+    margin: 0 auto;
+    justify-content: space-around;
+
+}
+
+.swiper-slide__lounge_container{
     display: flex;
     flex-wrap: wrap;
     width: 1112px!important;
@@ -411,6 +425,10 @@ body{
 
 .additional_btn:hover{
     background: #d00000;
+}
+
+.quests_section{
+    padding-bottom: 50px;
 }
 
 .quests_section__title{
@@ -492,7 +510,7 @@ body{
 }
 
 .quests_section__btn.launzh{
-    width: 92px;
+    width: 106px;
     height: 36px;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
@@ -554,6 +572,204 @@ body{
     bottom: 8px;
     left: 11px;
 }
+
+.lounge_section{
+    padding-top: 70px;
+    background: #eeeeee;
+    padding-bottom: 50px;
+}
+
+.lounge_section__title{
+    font-weight: 600;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.black{
+    color: #000;
+}
+
+.lounge__item{
+    width: 310px;
+    height: 270px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 1, 9, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lounge_item__img{
+    position: absolute;
+    width:100%;
+    height: 194px;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.lounge_item__mini_description{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 72px;
+    left:10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.lounge_item__mini_description .number{
+    width: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FF0000;
+}
+
+.lounge_item__mini_description .desc{
+    width: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 118.69%;
+    color: #000000;
+}
+
+.lounge_item__eye{
+    position: absolute;
+    width: 45px;
+    height: 41px;
+    background: url(../images/icons/eye.png)no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 72px;
+    right: 9px;
+    top: 10px;
+    z-index: 2;
+}
+.lounge_item__address_container{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 168.19%;
+}
+
+.lounge_address__street{
+    display: flex;
+    align-items: center;
+}
+.lounge_address__subway{
+    display: flex;
+    align-items: center;
+}
+
+.street_icon{
+    background: url(../images/icons/vector.png)no-repeat;
+    width: 30px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.subway_icon{
+    background: url(../images/icons/red_subway.png)no-repeat;
+    width: 29px;
+    height: 22px;
+    margin-top: 2px;
+}
+
+.lounge_address__subway{
+    padding-bottom: 10px;
+}
+
+.lounge_item__overlay{
+    position: absolute;
+    width: 100%;
+    height: 194px;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.lounge__description{
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.lounge__description span{
+    color: #FFBCBC;
+}
+
+.lounge__item:hover .lounge_item__overlay{
+    opacity: 1;
+    transition:0.7s
+}
+
+.lounge_section__sliders{
+    padding-top: 40px;
+    height: 610px;
+}
+
+.lounge_section__btn{
+    width: 245px;
+    height: 49px;
+    background: #F10000;
+    border-radius: 105px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 157.19%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.reviews_section{
+    padding-top: 50px;
+}
+
+.reviews_section__title{
+
+    width: 100%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 166.19%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+
+
 
 
 
