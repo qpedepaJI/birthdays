@@ -9,6 +9,16 @@ body{
     margin: 0;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.content{
+    padding-top: 100px;
+}
+
 .wrapper{
     width: 1112px;
     margin: 0 auto;
