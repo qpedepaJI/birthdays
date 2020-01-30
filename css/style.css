@@ -6,11 +6,76 @@ a{
 body{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
+    margin: 0;
 }
 
-.main_wrapper{
+.wrapper{
     width: 1112px;
     margin: 0 auto;
+}
+
+.header__wrapper{
+    display: flex;
+}
+
+.header_black__container{
+    background: #151514;
+}
+
+.header_red__container{
+    background: #ff0000;
+    font-size: 12px;
+}
+
+.header_menu__item{
+    transition: 0.2s;
+    margin: 0px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.header_menu__item:hover p{
+    background: red;
+}
+
+.header_menu__item p{
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.header_menu__item p.header_phone{
+    border-right: none;
+}
+
+.logo_img{
+    width: 140px;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+.header_icons{
+    padding: 0px 10px;
+    border-right: 1px solid #0000008c;
+}
+
+.header_icons img{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.header_menu__item_red{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .banners_section{
