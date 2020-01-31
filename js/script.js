@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     let btn = $('.additional_btn').text();
-    console.log(btn);
+    $('.left_items__item_select').selectric();
 
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters

@@ -88,6 +88,12 @@ header{
     text-transform: uppercase;
 }
 
+.header_menu__item_red:hover{
+    background: black;
+}
+
+
+
 .header_menu__item_red p{
     border-right: 1px solid #0000008c;
     padding: 0 10px;
@@ -221,7 +227,6 @@ header{
 .middle_banners__square{
     width: 280px;
     height: 238px;
-    background: green;
     margin-left: 10px;
     border-radius: 6px;
 }
@@ -1000,6 +1005,75 @@ footer{
     font-size: 14px;
     padding-top: 7px;
 }
+
+.modal_wrapper{
+    padding: 10px;
+}
+
+@media (max-width: 560px) {
+
+    header{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .banners_container{
+        width: calc(100% - 10px);
+        flex-wrap: wrap;
+    }
+
+    .main_banner{
+        height: auto;
+        width: calc(100% - 10px);
+        margin: 0 auto;
+    }
+
+    .main_banner img{
+        width: 100%;
+    }
+
+    .main_banner__container{
+        position: absolute;
+        bottom: 20px;
+        font-size: 16px;
+        width: 70%;
+        line-height: 1.45;
+        z-index: 2;
+        text-transform: uppercase;
+        padding: 0 20px;
+    }
+
+    .middle_banners__container{
+        margin: 0 auto;
+        width:calc(100% - 10px);
+    }
+
+    .middle_banners__square{
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .square__first{
+        width: 100%;
+        margin: 0;
+    }
+
+    .square__second{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
 
 
 
