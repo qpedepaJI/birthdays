@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css" >
-
-
     <title>Дни рождения</title>
 </head>
 <body>
+
+
+    /*-------------------------------------------HEADER------------------------------------------------------*/
 <header>
     <div class="header_desktop">
         <div class="header_black__container">
@@ -198,7 +199,12 @@
     </div>
 </header>
 
+    /*-----------------------------------------------------------------------------------------------------*/
+
 <div class="content">
+
+    /*-------------------------------------------BANNERS SECTION------------------------------------------------------*/
+    
     <div class="banners_section">
         <div class="wrapper">
             <div class="banners_container">
@@ -246,6 +252,18 @@
 
                 </div>
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            /*-------------------------------------------TYPES HOLIDAYS SECTION------------------------------------------------------*/
+            
             <div class="types_holidays">
                 <div class="types_holidays__title">
                     Выберите один из вариантов праздника
@@ -274,7 +292,7 @@
                             </ul>
                         </div>
                         <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn">Забронировать</div>
+                            <div class="types_holidays__btn button_order" prc="5000">Забронировать</div>
                         </a>
                     </div>
 
@@ -298,7 +316,7 @@
                             </ul>
                         </div>
                         <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn">Забронировать</div>
+                            <div class="types_holidays__btn button_order" prc="6500">Забронировать</div>
                         </a>
                     </div>
 
@@ -322,7 +340,7 @@
                             </ul>
                         </div>
                         <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn">Забронировать</div>
+                            <div class="types_holidays__btn button_order" prc="8500">Забронировать</div>
                         </a>
                     </div>
 
@@ -346,13 +364,30 @@
                             </ul>
                         </div>
                         <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn">Забронировать</div>
+                            <div class="types_holidays__btn button_order" prc="12500">Забронировать</div>
                         </a>
                     </div>
                 </div>
             </div>
+
+            /*-----------------------------------------------------------------------------------------------------*/
+            
         </div>
     </div>
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /*-------------------------------------------ADDITIONAL SECTION------------------------------------------------------*/
     <div class="additional_section">
         <div class="additional_section__title">
             Дополнительные услуги
@@ -452,6 +487,21 @@
         </div>
         <div class="additional_btn">Выбрать</div>
     </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /*-------------------------------------------QUESTS SECTION------------------------------------------------------*/
+    
     <div class="quests_section">
         <div class="quests_section__title">
             Детские квесты
@@ -724,6 +774,24 @@
         </div>
     </div>
 
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*-------------------------------------------LOUNGES SECTION------------------------------------------------------*/
+    
     <div class="lounge_section">
         <div class="lounge_section__title">Наши лаунж-зоны</div>
         <div class="lounge_section__sliders swiper-container">
@@ -1205,6 +1273,23 @@
         <div class="btn btn_lounge">Забронировать</div>
     </div>
 
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /*-------------------------------------------REVIEWS SECTION------------------------------------------------------*/
+    
     <div class="reviews_section">
         <div class="reviews_section__title">Отзывы</div>
         <div class="reviews_content swiper-container">
@@ -1344,7 +1429,23 @@
 
         <div class="btn btn_reviews">Оставить отзыв</div>
     </div>
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-------------------------------------------BOOKING MODAL SECTION------------------------------------------------------*/
 
 <div id="booking" class="modal booking_modal">
     <div class="booking_left">
@@ -1461,6 +1562,22 @@
     <a href="#" rel="modal:close">Close</a>
 </div>
 
+    /*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-------------------------------------------FOOTER------------------------------------------------------*/
 
 <footer>
     <div class="wrapper footer_desktop">
@@ -1570,6 +1687,8 @@
     </div>
 
 </footer>
+
+    /*-----------------------------------------------------------------------------------------------------*/
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <link rel="stylesheet" href="css/selectric.css">
 <link rel="stylesheet" href="css/modal.css">
@@ -1581,6 +1700,8 @@
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/selectric.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script_old_one.js"></script>
+<script type="text/javascript" src="js/script_old_two.js"></script>
 <script type="text/javascript" src="js/script_old.js"></script>
 
 </body>
