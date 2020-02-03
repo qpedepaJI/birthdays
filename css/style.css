@@ -148,6 +148,10 @@ header{
     text-transform: uppercase;
 }
 
+.swiper-container__mobile{
+    display: none;
+}
+
 .middle_banners__square_container{
     position: relative;
     font-weight: bold;
@@ -427,6 +431,7 @@ header{
 
 }
 
+
 .additional_section__slider{
     color: #000;
     display: flex;
@@ -483,6 +488,11 @@ header{
 .swiper-container{
 
     width: 1300px
+}
+
+.swiper-container__mobile{
+
+    width: calc(100% - 10px);
 }
 
 .swiper-slide__container{
@@ -1012,34 +1022,34 @@ footer{
 
 @media (max-width: 560px) {
 
-    header{
+    header {
         display: none;
     }
 
-    footer{
+    footer {
         display: none;
     }
 
-    .wrapper{
+    .wrapper {
         width: 100%;
     }
 
-    .banners_container{
+    .banners_container {
         width: calc(100% - 10px);
         flex-wrap: wrap;
     }
 
-    .main_banner{
+    .main_banner {
         height: auto;
         width: calc(100% - 10px);
         margin: 0 auto;
     }
 
-    .main_banner img{
+    .main_banner img {
         width: 100%;
     }
 
-    .main_banner__container{
+    .main_banner__container {
         position: absolute;
         bottom: 20px;
         font-size: 16px;
@@ -1050,25 +1060,75 @@ footer{
         padding: 0 20px;
     }
 
-    .middle_banners__container{
+    .middle_banners__container {
         margin: 0 auto;
-        width:calc(100% - 10px);
+        width: calc(100% - 10px);
     }
 
-    .middle_banners__square{
+    .middle_banners__square {
         width: 100%;
         margin: 0;
         height: auto;
+        display: none;
     }
 
-    .square__first{
+    .square__first {
         width: 100%;
         margin: 0;
     }
 
-    .square__second{
+    .square__second {
         width: 100%;
         margin: 0;
+    }
+
+    .middle_banners__youtobe {
+        height: 20px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .youtobe_banner__description {
+        font-size: 12px;
+    }
+
+    .types_holidays {
+        width: calc(100% - 10px);
+    }
+
+    .types_holidays__description {
+        width: calc(100% - 10px);
+        margin: 0 auto;
+    }
+
+    .quests_section__quest {
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .quests_section__quest_overlay {
+        width: 320px;
+    }
+
+    .additional_section__sliders {
+        display: none;
+
+    }
+
+    .swiper-container {
+        width: calc(100% - 10px);
+    }
+
+    .additional_section__slider{
+        width: 285px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+        height: 250px;
+    }
+
+    .swiper-wrapper{
+        display: block;
     }
 }
 

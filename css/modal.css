@@ -6,6 +6,10 @@
     box-shadow: none;
     font-family: 'Montserrat', sans-serif;
 }
+
+#booking{
+    display: none;
+}
 .booking_modal{
     height: 650px;
     display: flex;
