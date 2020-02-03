@@ -97,6 +97,8 @@ $(document).ready(function () {
 
     $("#of_phone").mask("8(999) 999-9999");
 
+    /*  checkpoint  */
+
     let json_data, datetime, order = {};
 
     function getQuestsTime(data) {
@@ -688,6 +690,8 @@ $(document).ready(function () {
 
     }
 
+
+
     $("#of_quest_table").on('click', '#dy_tort', function () {
         if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 500;
         else let psd = parseInt($(".pac_price").text()) - 500;
@@ -754,6 +758,8 @@ $(document).ready(function () {
         }
         $(".pac_price").text(price_sel);
     });
+
+
 
     $("#of_quest_table").on('click', '#dy_ani_p', function () {
         let is_checked = $(this).prop("checked");
@@ -1055,6 +1061,11 @@ $(document).ready(function () {
     });
 
 
+
+
+
+
+
     $("#ve_d").change(function () {
 
         promotion();
@@ -1234,6 +1245,8 @@ $(document).ready(function () {
             'color': 'transparent'
         });
     }
+
+    /*  checkpoint  */
 
     $("#order_form .of_close").click(function () {
         $("#order_form").css('display', 'none');
@@ -1594,4 +1607,7 @@ $(document).ready(function () {
                 $(this).attr('class', 'ho');
         });
     });
+
+
+    /*  checkpoint  */
 });
