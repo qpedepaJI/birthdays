@@ -1581,6 +1581,7 @@
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/selectric.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script_old.js"></script>
 
 </body>
 </html>
