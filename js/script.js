@@ -16,5 +16,17 @@ $(document).ready(function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-    })
+    });
+
+    $('.header_mobile__burger_open').on('click',function(){
+      $(this).css('display','none');
+      $('.header__right').css('display','block');
+      $('.header_mobile__burger_close').css('display','block');
+    });
+
+    $('.header_mobile__burger_close').on('click',function(){
+        $(this).css('display','none');
+        $('.header__right').css('display','none');
+        $('.header_mobile__burger_open').css('display','block');
+    });
 });

@@ -988,7 +988,7 @@ header{
     background: url('../images/icons/commas.png');
 }
 
-footer{
+.footer_desktop{
     background: #191919;
     padding: 25px;
 }
@@ -1045,15 +1045,33 @@ footer{
     display: none;
 }
 
+.footer_mobile{
+    display: none;
+}
+.header_mobile{
+    display: none;
+}
+
 @media (max-width: 560px) {
 
 
+    .header_mobile{
+        display: block;
+    }
 
-    header {
+    .header_desktop {
         display: none;
     }
 
-    footer {
+    .footer_mobile{
+        display: block;
+    }
+
+    .footer_desktop {
+        display: none;
+    }
+
+    .footer_desktop{
         display: none;
     }
 
@@ -1220,6 +1238,91 @@ footer{
         width: 100%;
     }
 
+    .header_mobile__container{
+        background: #151514;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo_img{
+        width: 100px;
+    }
+
+    .header_mobile__burger_container{
+        width: 30px;
+        height: 30px;
+    }
+
+    .header_mobile__burger_open{
+        background: url(https://ilocked.ru/sites/all/themes/main/img/menu_call.png) no-repeat center center;
+        background-size: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .header_mobile__burger_close{
+        background: url(https://ilocked.ru/sites/all/themes/main/img/close_m.png) no-repeat center center;
+        background-size: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .content{
+        padding-top: 60px;
+    }
+
+    .reviews_section{
+        height: 500px;
+    }
+
+    .footer_mobile{
+        background: #191919;
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .btn{
+        margin-top: 0;
+    }
+
+    .footer_left__item p{
+        color: #696969;
+        text-transform: uppercase;
+        border-bottom: 2px solid;
+        font-size: 16px;
+        cursor: pointer;
+        width: auto;
+        display: inline-block;
+        margin: 8px 0px;
+    }
+
+    .header_mobile_phone{
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+
+    .header__right{
+        width: 250px;
+        background: #151514;
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+
+    .header_right__item{
+        padding:0 40px;
+    }
+
+    .header_right__item p{
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 2px solid;
+
+    }
+    
 
 }
 
