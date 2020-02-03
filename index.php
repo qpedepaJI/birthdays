@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>Дни рождения</title>
 </head>
 <body>
 
 
-    /*-------------------------------------------HEADER------------------------------------------------------*/
+/*-------------------------------------------HEADER------------------------------------------------------*/
 <header>
     <div class="header_desktop">
         <div class="header_black__container">
@@ -95,22 +95,22 @@
                 <div>
                     <p class="header_icons">
                         <a href="https://api.whatsapp.com/send?phone=79315812376&text=&source=&data=" target="_blank">
-                            <img  src="https://ilocked.ru/sites/all/themes/main/img/whatwhite.png">
+                            <img src="https://ilocked.ru/sites/all/themes/main/img/whatwhite.png">
                         </a>
                         <a href="https://www.vk.com/ilockedru" target="_blank">
                             <img src="https://ilocked.ru/sites/all/themes/main/img/img/if_vkontakte_306170.svg">
                         </a>
                         <a href="https://www.instagram.com/ilockedru" target="_blank">
-                            <img  src="https://ilocked.ru/sites/all/themes/main/img/img/if_38-instagram_104466.svg">
+                            <img src="https://ilocked.ru/sites/all/themes/main/img/img/if_38-instagram_104466.svg">
                         </a>
                         <a href="https://www.facebook.com/ilockedspb" target="_blank">
-                            <img  src="https://ilocked.ru/sites/all/themes/main/img/img/if_06-facebook_104498.svg">
+                            <img src="https://ilocked.ru/sites/all/themes/main/img/img/if_06-facebook_104498.svg">
                         </a>
                         <a href="https://www.youtube.com/iLockedru" target="_blank">
-                            <img  src="https://ilocked.ru/sites/all/themes/main/img/img/if_icon-social-youtube_211929 (1).svg">
+                            <img src="https://ilocked.ru/sites/all/themes/main/img/img/if_icon-social-youtube_211929 (1).svg">
                         </a>
                         <a href="https://t.me/ILockedofficial_bot?roistat_visit=537660" target="_blank">
-                            <img  src="https://ilocked.ru/sites/all/themes/main/img/telegram.png">
+                            <img src="https://ilocked.ru/sites/all/themes/main/img/telegram.png">
                         </a>
                     </p>
                 </div>
@@ -199,12 +199,12 @@
     </div>
 </header>
 
-    /*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 
 <div class="content">
 
     /*-------------------------------------------BANNERS SECTION------------------------------------------------------*/
-    
+
     <div class="banners_section">
         <div class="wrapper">
             <div class="banners_container">
@@ -214,7 +214,7 @@
                             Готовые пакетные предложения для дней рождений!
                         </div>
                         <div class="main_banner__btn">
-                            <a href="#" >Заказать</a></div>
+                            <a href="#">Заказать</a></div>
                     </div>
                     <img src="images/main_banner.png">
                     <div class="main_banner__overlay">
@@ -242,7 +242,8 @@
                         </div>
                     </div>
                     <div class="middle_banners__youtobe">
-                        <iframe class="youtobe" src="https://www.youtube.com/embed/PjFvMU8UkKk?autoplay=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="youtobe" src="https://www.youtube.com/embed/PjFvMU8UkKk?autoplay=0&showinfo=0"
+                                frameborder="0" allowfullscreen></iframe>
                         <div class="youtobe_banner__description">
                             Как будет проходить ваш праздник
                         </div>
@@ -252,18 +253,11 @@
 
                 </div>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
 
-            /*-------------------------------------------TYPES HOLIDAYS SECTION------------------------------------------------------*/
-            
+
+            /*-------------------------------------------TYPES HOLIDAYS
+            SECTION------------------------------------------------------*/
+
             <div class="types_holidays">
                 <div class="types_holidays__title">
                     Выберите один из вариантов праздника
@@ -282,7 +276,8 @@
                             <ul class="types_holidays__ul">
                                 <li class="types_holidays__li grey circle">Игра в квест</li>
                                 <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
+                                </li>
                                 <li class="types_holidays__li circle">Торт в подарок имениннику</li>
                                 <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
                                 <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
@@ -291,8 +286,8 @@
                                 <li class="types_holidays__li grey no-circle"></li>
                             </ul>
                         </div>
-                        <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" prc="5000">Забронировать</div>
+                        <a class="button_order" href="#booking" rel="modal:open">
+                            <div class="types_holidays__btn " prc="5000">Забронировать</div>
                         </a>
                     </div>
 
@@ -306,7 +301,8 @@
                             <ul class="types_holidays__ul">
                                 <li class="types_holidays__li grey circle">Игра в квест</li>
                                 <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
+                                </li>
                                 <li class="types_holidays__li circle">Торт в подарок имениннику</li>
                                 <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
                                 <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
@@ -315,8 +311,8 @@
                                 <li class="types_holidays__li grey no-circle"></li>
                             </ul>
                         </div>
-                        <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" prc="6500">Забронировать</div>
+                        <a class="button_order" href="#booking" rel="modal:open">
+                            <div class="types_holidays__btn" prc="6500">Забронировать</div>
                         </a>
                     </div>
 
@@ -330,7 +326,8 @@
                             <ul class="types_holidays__ul">
                                 <li class="types_holidays__li grey circle">Игра в квест</li>
                                 <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
+                                </li>
                                 <li class="types_holidays__li circle">Торт в подарок имениннику</li>
                                 <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
                                 <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
@@ -339,8 +336,8 @@
                                 <li class="types_holidays__li grey no-circle"></li>
                             </ul>
                         </div>
-                        <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" prc="8500">Забронировать</div>
+                        <a class="button_order" href="#booking" rel="modal:open">
+                            <div class="types_holidays__btn" prc="8500">Забронировать</div>
                         </a>
                     </div>
 
@@ -353,41 +350,33 @@
                             <ul class="types_holidays__ul">
                                 <li class="types_holidays__li grey circle">Игра в квест</li>
                                 <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час</li>
+                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
+                                </li>
                                 <li class="types_holidays__li circle">Торт в подарок имениннику</li>
                                 <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
                                 <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
                                 <li class="types_holidays__li grey circle">Аниматор в квесте</li>
                                 <li class="types_holidays__li circle">Мастер-класс или Химическое<br>
-                                    шоу на выбор</li>
+                                    шоу на выбор
+                                </li>
                                 <li class="types_holidays__li grey circle">Профессиональный фотограф</li>
                             </ul>
                         </div>
-                        <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" prc="12500">Забронировать</div>
+                        <a class="button_order" href="#booking" rel="modal:open">
+                            <div class="types_holidays__btn" prc="12500">Забронировать</div>
                         </a>
                     </div>
                 </div>
             </div>
 
             /*-----------------------------------------------------------------------------------------------------*/
-            
+
         </div>
     </div>
 
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-    /*-------------------------------------------ADDITIONAL SECTION------------------------------------------------------*/
+    /*-------------------------------------------ADDITIONAL
+    SECTION------------------------------------------------------*/
     <div class="additional_section">
         <div class="additional_section__title">
             Дополнительные услуги
@@ -469,7 +458,6 @@
         </div>
 
 
-
         <div class="additional_section__sliders_mobile   swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -488,20 +476,9 @@
         <div class="additional_btn">Выбрать</div>
     </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     /*-------------------------------------------QUESTS SECTION------------------------------------------------------*/
-    
+
     <div class="quests_section">
         <div class="quests_section__title">
             Детские квесты
@@ -512,7 +489,6 @@
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
 
 
-
                     <div class="quests_section__quest_overlay">
                         <div class="quests_section__quest_age">+14</div>
 
@@ -539,36 +515,6 @@
                 </div>
                 <div class="quests_section__quest">
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
-
-
-
-                    <div class="quests_section__quest_overlay">
-                        <div class="quests_section__quest_age">+14</div>
-
-                        <div class="quests_section__quest_title">
-                            супергерои:<br>новое поколение
-                        </div>
-                        <div class="quests_section__quest_buttons">
-                            <div class="quests_section__btn details">Подробнее о квесте</div>
-                            <div class="quests_section__btn launzh">Лаунж</div>
-                        </div>
-                        <div class="quests_section__quest_address">
-                            <div class="quest_address__street_container">
-                                <div class="quest_address__street_icon"></div>
-                                <div class="quest_address__street">Коломенская</div>
-                            </div>
-
-                            <div class="quest_address__subway_container">
-                                <div class="quest_address__subway_icon"></div>
-                                <div class="quest_address__subway">Лиговский проспект</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="quests_section__quest">
-                    <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
-
 
 
                     <div class="quests_section__quest_overlay">
@@ -599,7 +545,6 @@
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
 
 
-
                     <div class="quests_section__quest_overlay">
                         <div class="quests_section__quest_age">+14</div>
 
@@ -626,36 +571,6 @@
                 </div>
                 <div class="quests_section__quest">
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
-
-
-
-                    <div class="quests_section__quest_overlay">
-                        <div class="quests_section__quest_age">+14</div>
-
-                        <div class="quests_section__quest_title">
-                            супергерои:<br>новое поколение
-                        </div>
-                        <div class="quests_section__quest_buttons">
-                            <div class="quests_section__btn details">Подробнее о квесте</div>
-                            <div class="quests_section__btn launzh">Лаунж</div>
-                        </div>
-                        <div class="quests_section__quest_address">
-                            <div class="quest_address__street_container">
-                                <div class="quest_address__street_icon"></div>
-                                <div class="quest_address__street">Коломенская</div>
-                            </div>
-
-                            <div class="quest_address__subway_container">
-                                <div class="quest_address__subway_icon"></div>
-                                <div class="quest_address__subway">Лиговский проспект</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="quests_section__quest">
-                    <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
-
 
 
                     <div class="quests_section__quest_overlay">
@@ -686,6 +601,33 @@
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
 
 
+                    <div class="quests_section__quest_overlay">
+                        <div class="quests_section__quest_age">+14</div>
+
+                        <div class="quests_section__quest_title">
+                            супергерои:<br>новое поколение
+                        </div>
+                        <div class="quests_section__quest_buttons">
+                            <div class="quests_section__btn details">Подробнее о квесте</div>
+                            <div class="quests_section__btn launzh">Лаунж</div>
+                        </div>
+                        <div class="quests_section__quest_address">
+                            <div class="quest_address__street_container">
+                                <div class="quest_address__street_icon"></div>
+                                <div class="quest_address__street">Коломенская</div>
+                            </div>
+
+                            <div class="quest_address__subway_container">
+                                <div class="quest_address__subway_icon"></div>
+                                <div class="quest_address__subway">Лиговский проспект</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="quests_section__quest">
+                    <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
+
 
                     <div class="quests_section__quest_overlay">
                         <div class="quests_section__quest_age">+14</div>
@@ -715,7 +657,6 @@
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
 
 
-
                     <div class="quests_section__quest_overlay">
                         <div class="quests_section__quest_age">+14</div>
 
@@ -743,6 +684,33 @@
                 <div class="quests_section__quest">
                     <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
 
+
+                    <div class="quests_section__quest_overlay">
+                        <div class="quests_section__quest_age">+14</div>
+
+                        <div class="quests_section__quest_title">
+                            супергерои:<br>новое поколение
+                        </div>
+                        <div class="quests_section__quest_buttons">
+                            <div class="quests_section__btn details">Подробнее о квесте</div>
+                            <div class="quests_section__btn launzh">Лаунж</div>
+                        </div>
+                        <div class="quests_section__quest_address">
+                            <div class="quest_address__street_container">
+                                <div class="quest_address__street_icon"></div>
+                                <div class="quest_address__street">Коломенская</div>
+                            </div>
+
+                            <div class="quest_address__subway_container">
+                                <div class="quest_address__subway_icon"></div>
+                                <div class="quest_address__subway">Лиговский проспект</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="quests_section__quest">
+                    <img src="images/quests/quest.png" class="quests_section__quest_image" alt="default">
 
 
                     <div class="quests_section__quest_overlay">
@@ -775,23 +743,10 @@
     </div>
 
     /*-----------------------------------------------------------------------------------------------------*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
     /*-------------------------------------------LOUNGES SECTION------------------------------------------------------*/
-    
+
     <div class="lounge_section">
         <div class="lounge_section__title">Наши лаунж-зоны</div>
         <div class="lounge_section__sliders swiper-container">
@@ -799,7 +754,8 @@
                 <div class="swiper-slide swiper-slide__lounge_container black">
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -820,7 +776,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -841,7 +798,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -862,7 +820,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -883,7 +842,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -904,136 +864,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
-                        <div class="lounge_item__eye"></div>
-                        <div class="lounge_item__overlay">
-                            <div class="lounge__description">
-                                <span>Квесты: </span>Игры престолов, Как<br>
-                                приручить драконов, Пила, Код<br> да Винчи
-                            </div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
                         </div>
-                        <div class="lounge_item__address_container">
-                            <div class="lounge_address__street">
-                                <div class="street_icon"></div>
-                                <div class="street_description">Коломенская 42</div>
-                            </div>
-                            <div class="lounge_address__subway">
-                                <div class="subway_icon"></div>
-                                <div class="subway_description">Лиговский проспект</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide swiper-slide__lounge_container black">
-                    <div class="lounge__item">
-                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
-                        <div class="lounge_item__eye"></div>
-                        <div class="lounge_item__overlay">
-                            <div class="lounge__description">
-                                <span>Квесты: </span>Игры престолов, Как<br>
-                                приручить драконов, Пила, Код<br> да Винчи
-                            </div>
-                        </div>
-                        <div class="lounge_item__address_container">
-                            <div class="lounge_address__street">
-                                <div class="street_icon"></div>
-                                <div class="street_description">Коломенская 42</div>
-                            </div>
-                            <div class="lounge_address__subway">
-                                <div class="subway_icon"></div>
-                                <div class="subway_description">Лиговский проспект</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lounge__item">
-                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
-                        <div class="lounge_item__eye"></div>
-                        <div class="lounge_item__overlay">
-                            <div class="lounge__description">
-                                <span>Квесты: </span>Игры престолов, Как<br>
-                                приручить драконов, Пила, Код<br> да Винчи
-                            </div>
-                        </div>
-                        <div class="lounge_item__address_container">
-                            <div class="lounge_address__street">
-                                <div class="street_icon"></div>
-                                <div class="street_description">Коломенская 42</div>
-                            </div>
-                            <div class="lounge_address__subway">
-                                <div class="subway_icon"></div>
-                                <div class="subway_description">Лиговский проспект</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lounge__item">
-                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
-                        <div class="lounge_item__eye"></div>
-                        <div class="lounge_item__overlay">
-                            <div class="lounge__description">
-                                <span>Квесты: </span>Игры престолов, Как<br>
-                                приручить драконов, Пила, Код<br> да Винчи
-                            </div>
-                        </div>
-                        <div class="lounge_item__address_container">
-                            <div class="lounge_address__street">
-                                <div class="street_icon"></div>
-                                <div class="street_description">Коломенская 42</div>
-                            </div>
-                            <div class="lounge_address__subway">
-                                <div class="subway_icon"></div>
-                                <div class="subway_description">Лиговский проспект</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lounge__item">
-                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
-                        <div class="lounge_item__eye"></div>
-                        <div class="lounge_item__overlay">
-                            <div class="lounge__description">
-                                <span>Квесты: </span>Игры престолов, Как<br>
-                                приручить драконов, Пила, Код<br> да Винчи
-                            </div>
-                        </div>
-                        <div class="lounge_item__address_container">
-                            <div class="lounge_address__street">
-                                <div class="street_icon"></div>
-                                <div class="street_description">Коломенская 42</div>
-                            </div>
-                            <div class="lounge_address__subway">
-                                <div class="subway_icon"></div>
-                                <div class="subway_description">Лиговский проспект</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lounge__item">
-                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
-                        <div class="lounge_item__eye"></div>
-                        <div class="lounge_item__overlay">
-                            <div class="lounge__description">
-                                <span>Квесты: </span>Игры престолов, Как<br>
-                                приручить драконов, Пила, Код<br> да Винчи
-                            </div>
-                        </div>
-                        <div class="lounge_item__address_container">
-                            <div class="lounge_address__street">
-                                <div class="street_icon"></div>
-                                <div class="street_description">Коломенская 42</div>
-                            </div>
-                            <div class="lounge_address__subway">
-                                <div class="subway_icon"></div>
-                                <div class="subway_description">Лиговский проспект</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lounge__item">
-                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1057,7 +889,8 @@
                 <div class="swiper-slide swiper-slide__lounge_container black">
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1078,7 +911,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1099,7 +933,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1120,7 +955,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1141,7 +977,8 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1162,7 +999,143 @@
                     </div>
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
+                        <div class="lounge_item__eye"></div>
+                        <div class="lounge_item__overlay">
+                            <div class="lounge__description">
+                                <span>Квесты: </span>Игры престолов, Как<br>
+                                приручить драконов, Пила, Код<br> да Винчи
+                            </div>
+                        </div>
+                        <div class="lounge_item__address_container">
+                            <div class="lounge_address__street">
+                                <div class="street_icon"></div>
+                                <div class="street_description">Коломенская 42</div>
+                            </div>
+                            <div class="lounge_address__subway">
+                                <div class="subway_icon"></div>
+                                <div class="subway_description">Лиговский проспект</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide__lounge_container black">
+                    <div class="lounge__item">
+                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
+                        <div class="lounge_item__eye"></div>
+                        <div class="lounge_item__overlay">
+                            <div class="lounge__description">
+                                <span>Квесты: </span>Игры престолов, Как<br>
+                                приручить драконов, Пила, Код<br> да Винчи
+                            </div>
+                        </div>
+                        <div class="lounge_item__address_container">
+                            <div class="lounge_address__street">
+                                <div class="street_icon"></div>
+                                <div class="street_description">Коломенская 42</div>
+                            </div>
+                            <div class="lounge_address__subway">
+                                <div class="subway_icon"></div>
+                                <div class="subway_description">Лиговский проспект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lounge__item">
+                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
+                        <div class="lounge_item__eye"></div>
+                        <div class="lounge_item__overlay">
+                            <div class="lounge__description">
+                                <span>Квесты: </span>Игры престолов, Как<br>
+                                приручить драконов, Пила, Код<br> да Винчи
+                            </div>
+                        </div>
+                        <div class="lounge_item__address_container">
+                            <div class="lounge_address__street">
+                                <div class="street_icon"></div>
+                                <div class="street_description">Коломенская 42</div>
+                            </div>
+                            <div class="lounge_address__subway">
+                                <div class="subway_icon"></div>
+                                <div class="subway_description">Лиговский проспект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lounge__item">
+                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
+                        <div class="lounge_item__eye"></div>
+                        <div class="lounge_item__overlay">
+                            <div class="lounge__description">
+                                <span>Квесты: </span>Игры престолов, Как<br>
+                                приручить драконов, Пила, Код<br> да Винчи
+                            </div>
+                        </div>
+                        <div class="lounge_item__address_container">
+                            <div class="lounge_address__street">
+                                <div class="street_icon"></div>
+                                <div class="street_description">Коломенская 42</div>
+                            </div>
+                            <div class="lounge_address__subway">
+                                <div class="subway_icon"></div>
+                                <div class="subway_description">Лиговский проспект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lounge__item">
+                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
+                        <div class="lounge_item__eye"></div>
+                        <div class="lounge_item__overlay">
+                            <div class="lounge__description">
+                                <span>Квесты: </span>Игры престолов, Как<br>
+                                приручить драконов, Пила, Код<br> да Винчи
+                            </div>
+                        </div>
+                        <div class="lounge_item__address_container">
+                            <div class="lounge_address__street">
+                                <div class="street_icon"></div>
+                                <div class="street_description">Коломенская 42</div>
+                            </div>
+                            <div class="lounge_address__subway">
+                                <div class="subway_icon"></div>
+                                <div class="subway_description">Лиговский проспект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lounge__item">
+                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
+                        <div class="lounge_item__eye"></div>
+                        <div class="lounge_item__overlay">
+                            <div class="lounge__description">
+                                <span>Квесты: </span>Игры престолов, Как<br>
+                                приручить драконов, Пила, Код<br> да Винчи
+                            </div>
+                        </div>
+                        <div class="lounge_item__address_container">
+                            <div class="lounge_address__street">
+                                <div class="street_icon"></div>
+                                <div class="street_description">Коломенская 42</div>
+                            </div>
+                            <div class="lounge_address__subway">
+                                <div class="subway_icon"></div>
+                                <div class="subway_description">Лиговский проспект</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lounge__item">
+                        <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1194,7 +1167,8 @@
                 <div class="swiper-slide swiper-slide__lounge_container_mobile black">
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1218,7 +1192,8 @@
                 <div class="swiper-slide swiper-slide__lounge_container_mobile black">
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1242,7 +1217,8 @@
                 <div class="swiper-slide swiper-slide__lounge_container_mobile black">
                     <div class="lounge__item">
                         <img src="images/lounges/lounge.png" class="lounge_item__img" alt="default">
-                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span></div>
+                        <div class="lounge_item__mini_description"><span class="number">4</span><span class="desc">квеста рядом</span>
+                        </div>
                         <div class="lounge_item__eye"></div>
                         <div class="lounge_item__overlay">
                             <div class="lounge__description">
@@ -1274,22 +1250,10 @@
     </div>
 
     /*-----------------------------------------------------------------------------------------------------*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 
     /*-------------------------------------------REVIEWS SECTION------------------------------------------------------*/
-    
+
     <div class="reviews_section">
         <div class="reviews_section__title">Отзывы</div>
         <div class="reviews_content swiper-container">
@@ -1384,7 +1348,6 @@
             </div>
 
 
-
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -1419,7 +1382,6 @@
             </div>
 
 
-
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -1431,21 +1393,12 @@
     </div>
 
     /*-----------------------------------------------------------------------------------------------------*/
-    
+
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-    /*-------------------------------------------BOOKING MODAL SECTION------------------------------------------------------*/
+/*-------------------------------------------BOOKING MODAL
+SECTION------------------------------------------------------*/
 
 <div id="booking" class="modal booking_modal">
     <div class="booking_left">
@@ -1490,8 +1443,10 @@
                         </div>
 
                         <div class="modal__description">
-                            <p><span class="star">*</span>Gредоплата составляет 3 000 руб.<span class="details modal_details">Подробнее</span></p>
-                            <p><span class="star">*</span>Стоимость пакета зависит от набора услуг и выбранного квеста</p>
+                            <p><span class="star">*</span>Gредоплата составляет 3 000 руб.<span
+                                        class="details modal_details">Подробнее</span></p>
+                            <p><span class="star">*</span>Стоимость пакета зависит от набора услуг и выбранного квеста
+                            </p>
                             <p><span class="star">*</span>Стоимость пакета в будни и выходные может отличаться</p>
                             <p><span class="star">*</span>При покупке пакетов другие скидки не действуют</p>
                         </div>
@@ -1562,56 +1517,69 @@
     <a href="#" rel="modal:close">Close</a>
 </div>
 
-    /*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    /*-------------------------------------------FOOTER------------------------------------------------------*/
+/*-------------------------------------------FOOTER------------------------------------------------------*/
 
 <footer>
     <div class="wrapper footer_desktop">
         <div class="footer_container">
             <div>
-                <img class="logo_img"  src="https://ilocked.ru/sites/all/themes/main/img/logo_black.png" alt="">
+                <img class="logo_img" src="https://ilocked.ru/sites/all/themes/main/img/logo_black.png" alt="">
                 <p class="footer_year">© 2020 ilocked</p>
-                <p class="footer_confidential"><a href="http://ilocked.ru/politika-konfidencialnosti">Политика конфиденциальности</a></p>
+                <p class="footer_confidential"><a href="http://ilocked.ru/politika-konfidencialnosti">Политика
+                        конфиденциальности</a></p>
             </div>
             <div class="footer_menu">
-                <a><div class="footer_menu__item">Квесты</div></a>
-                <a><div class="footer_menu__item">Faq</div></a>
-            </div>
-
-            <div class="footer_menu">
-                <a><div class="footer_menu__item">Дни рождения</div></a>
-                <a><div class="footer_menu__item">Новости</div></a>
-            </div>
-
-            <div class="footer_menu">
-                <a><div class="footer_menu__item">Театр</div></a>
-                <a><div class="footer_menu__item">Скидки</div></a>
-                <a><div class="footer_menu__item">Подарочные сертификаты</div></a>
+                <a>
+                    <div class="footer_menu__item">Квесты</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Faq</div>
+                </a>
             </div>
 
             <div class="footer_menu">
-                <A><div class="footer_menu__item">Франшиза</div></a>
-                <a><div class="footer_menu__item">Контакты</div></a>
-                <a><div class="footer_menu__item">Документы</div></a>
+                <a>
+                    <div class="footer_menu__item">Дни рождения</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Новости</div>
+                </a>
             </div>
 
             <div class="footer_menu">
-                <a><div class="footer_menu__item">О нас</div></a>
-                <a><div class="footer_menu__item">Предоплата</div></a>
+                <a>
+                    <div class="footer_menu__item">Театр</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Скидки</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Подарочные сертификаты</div>
+                </a>
+            </div>
+
+            <div class="footer_menu">
+                <A>
+                    <div class="footer_menu__item">Франшиза</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Контакты</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Документы</div>
+                </a>
+            </div>
+
+            <div class="footer_menu">
+                <a>
+                    <div class="footer_menu__item">О нас</div>
+                </a>
+                <a>
+                    <div class="footer_menu__item">Предоплата</div>
+                </a>
             </div>
         </div>
     </div>
@@ -1688,8 +1656,8 @@
 
 </footer>
 
-    /*-----------------------------------------------------------------------------------------------------*/
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+/*-----------------------------------------------------------------------------------------------------*/
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 <link rel="stylesheet" href="css/selectric.css">
 <link rel="stylesheet" href="css/modal.css">
 
@@ -1700,9 +1668,6 @@
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/selectric.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/script_old_one.js"></script>
-<script type="text/javascript" src="js/script_old_two.js"></script>
-<script type="text/javascript" src="js/script_old.js"></script>
-
+<script type="text/javascript" src="js/script_main.js"></script>
 </body>
 </html>

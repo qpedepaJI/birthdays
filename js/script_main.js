@@ -1,28 +1,29 @@
-// window.dataLayer = window.dataLayer || [];
-//
-// function promotion() {
-//
-//     let DateTime = luxon.DateTime;
-//     let questDate = $("#ve_d option:selected").val();
-//     let date = DateTime.fromFormat(questDate, "dd.MM.yy");
-//     if ($("#ve_q").val() == 680) {
-//         let pricePacket = $("#ve_p option:selected").val();
-//         let month = date.toFormat("L");
-//         if (month == 2) {
-//             $("#ve_q option:selected").attr("prc_1b", 6000);
-//             $("#ve_q option:selected").attr("prc_1v", 6000);
-//             $("#ve_q").attr("prc_1b", 6000);
-//             $("#ve_q").attr("prc_1v", 6000);
-//         } else {
-//             $("#ve_q option:selected").attr("prc_1b", 7500);
-//             $("#ve_q option:selected").attr("prc_1v", 8000);
-//             $("#ve_q").attr("prc_1b", 7500);
-//             $("#ve_q").attr("prc_1v", 8000);
-//         }
-//     }
-// }
-
 $(document).ready(function () {
+
+    window.dataLayer = window.dataLayer || [];
+
+    function promotion() {
+
+        let DateTime = luxon.DateTime;
+        let questDate = $("#ve_d option:selected").val();
+        let date = DateTime.fromFormat(questDate, "dd.MM.yy");
+        if ($("#ve_q").val() == 680) {
+            let pricePacket = $("#ve_p option:selected").val();
+            let month = date.toFormat("L");
+            if (month == 2) {
+                $("#ve_q option:selected").attr("prc_1b", 6000);
+                $("#ve_q option:selected").attr("prc_1v", 6000);
+                $("#ve_q").attr("prc_1b", 6000);
+                $("#ve_q").attr("prc_1v", 6000);
+            } else {
+                $("#ve_q option:selected").attr("prc_1b", 7500);
+                $("#ve_q option:selected").attr("prc_1v", 8000);
+                $("#ve_q").attr("prc_1b", 7500);
+                $("#ve_q").attr("prc_1v", 8000);
+            }
+        }
+    }
+
 
     let win_form = $("#of_quest_table").html();
     let animator = {
@@ -30,12 +31,10 @@ $(document).ready(function () {
         '1110': '',  // Время приключений
         '662': ''    // Как приручить драконов
     };
-
     let date_of_holydays = [
         '24.02.20',
         '09.03.20'
     ];
-
     let holidays = {
         /* декабрь */
         '2018-12-30': '',
@@ -86,17 +85,10 @@ $(document).ready(function () {
         '871': 'Последняя тайна да Винчи',
         '18': 'Код да Винчи',
     };
-
     $(".l_desc > div").each(function () {
         $(this).parent().attr('style', '--height: ' + ($(this).height() + 54) + 'px'); // 54 т.к. 14px padding + 40px
     });
-
-    $("#of_quest_table > div").mCustomScrollbar({
-        theme: "dark-3"
-    });
-
     $("#of_phone").mask("8(999) 999-9999");
-
     let json_data, datetime, order = {};
 
     function getQuestsTime(data) {
@@ -688,11 +680,16 @@ $(document).ready(function () {
 
     }
 
-    $("#of_quest_table").on('click', '#dy_tort', function () {
-        if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 500;
-        else let psd = parseInt($(".pac_price").text()) - 500;
-        $(".pac_price").text(psd);
-    });
+
+    /*-------------------Пофиксить-----------------------------*/
+
+    // $("#of_quest_table").on('click', '#dy_tort', function () {
+    //     if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 500;
+    //     else let psd = parseInt($(".pac_price").text()) - 500;
+    //     $(".pac_price").text(psd);
+    // });
+
+    /*-------------------------------------------------*/
 
     $("#of_quest_table").on('click', '#dy_ani', function () {
         let is_checked = $(this).prop("checked");
@@ -741,7 +738,6 @@ $(document).ready(function () {
             }
         });
     });
-
     $("#of_quest_table").on('click', '#dy_him', function () {
         let is_checked = $(this).prop("checked");
         qid = $("#ve_q").val();
@@ -781,279 +777,282 @@ $(document).ready(function () {
         $(".pac_price").text(price_sel);
     });
 
-    $("#of_quest_table").on('click', '#dy_photo', function () {
-        if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 2500;
-        else let psd = parseInt($(".pac_price").text()) - 2500;
-        $(".pac_price").text(psd);
-    });
+    /*-----------------------Пофиксить---------------------------------*/
 
-    $("#of_quest_table").on('click', '#dy_lounge', function () {
-        if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 1500;
-        else let psd = parseInt($(".pac_price").text()) - 1500;
-        $(".pac_price").text(psd);
-    });
+    // $("#of_quest_table").on('click', '#dy_photo', function () {
+    //     if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 2500;
+    //     else let psd = parseInt($(".pac_price").text()) - 2500;
+    //     $(".pac_price").text(psd);
+    // });
 
-    $("#ve_q").change(function () {
+    // $("#of_quest_table").on('click', '#dy_lounge', function () {
+    //     if ($(this).is(':checked')) let psd = parseInt($(".pac_price").text()) + 1500;
+    //     else let psd = parseInt($(".pac_price").text()) - 1500;
+    //     $(".pac_price").text(psd);
+    // });
 
-        let tinkoff_array = ['17', '18', '65', '25', '60', '71', '15', '443', '1115', '871', '157', '662', '680', '451', '453', '773', '670', '646', '1110', '64', '66', '928'];
-        let tinkoff_quest = $(this).val();
-        console.log('tinkoff_quest = ' + tinkoff_quest);
+    // $("#ve_q").change(function () {
+    //
+    //     let tinkoff_array = ['17', '18', '65', '25', '60', '71', '15', '443', '1115', '871', '157', '662', '680', '451', '453', '773', '670', '646', '1110', '64', '66', '928'];
+    //     let tinkoff_quest = $(this).val();
+    //     console.log('tinkoff_quest = ' + tinkoff_quest);
+    //
+    //     if (tinkoff_array.indexOf(tinkoff_quest) != -1) {
+    //
+    //         $('#button_d2').css('display', 'inline-block');
+    //         $('#button_d3').css('display', 'inline-block');
+    //
+    //     } else {
+    //         $('#button_d2').css('display', 'none');
+    //         $('#button_d3').css('display', 'none');
+    //     }
+    //
+    //     if (($('#ve_p').val() == '5000') || $('#ve_p').val() == '6500') $('#dy_master_class').removeAttr("checked");
+    //     if (($('#ve_p').val() == '5000') || $('#ve_p').val() == '6500') $('#dy_him').removeAttr("checked");
+    //     if ($(this).val() == '670') {
+    //         $('#dy_ani_p').parent().css('display', 'block');
+    //     } else {
+    //         $('#dy_ani_p').parent().css('display', 'none');
+    //     }
+    //
+    //     let quest = $(this).val();
+    //
+    //     if (quest == '670' || quest == '646' || quest == '680' || quest == '1110') {
+    //         $('#dy_big_launzh').parent().css('display', 'block');
+    //     } else {
+    //         $('#dy_big_launzh').parent().css('display', 'none');
+    //     }
+    //
+    //     $('#pirat-master').remove();
+    //     let v = $(this).val();
+    //
+    //     let pirat = '<li id="pirat-master"><input type="radio" id="mc_list_2" name="mc_list" value="Пиратский мастер-класс" value="Пиратский"><label for="mc_list_2"> пиратский мастер-класс</label></li>';
+    //
+    //     if (v == '15') $('.master_class').append(pirat);
+    //
+    //     if (v == '871' || v == '65' || v == '17') {
+    //         $('#anim').css('display', 'none');
+    //     } else {
+    //         $('#anim').css('display', 'inline');
+    //     }
+    //     if (
+    //         v == '17' ||
+    //         v == '65' ||
+    //         v == '871'
+    //     ) {
+    //         $("#ve_p > option").each(function () {
+    //             if (
+    //                 $(this).attr('value') == '6500' ||
+    //                 $(this).attr('value') == '8500' ||
+    //                 $(this).attr('value') == '12500'
+    //             ) {
+    //                 $(this).attr('disabled', '');
+    //             }
+    //         });
+    //     } else if (
+    //         v == '64') {
+    //         $("#ve_p > option").each(function () {
+    //             if (
+    //                 $(this).attr('value') == '8500' ||
+    //                 $(this).attr('value') == '12500'
+    //             ) {
+    //                 $(this).attr('disabled', '');
+    //             }
+    //         });
+    //     } else {
+    //         $("#ve_p > option").each(function () {
+    //             if (
+    //                 $(this).attr('value') == '6500' ||
+    //                 $(this).attr('value') == '8500' ||
+    //                 $(this).attr('value') == '12500'
+    //             ) {
+    //                 $(this).removeAttr('disabled');
+    //             }
+    //         });
+    //     }
+    //
+    //     $(this).prev().css('background', '#714417');
+    //
+    //     $(".error_message").remove();
+    //
+    //     $("#ve_d").html('<option value="">ВЫБЕРИТЕ ДАТУ</option>');
+    //     $("#ve_v").html('<option value="">ВЫБЕРИТЕ ВРЕМЯ</option>');
+    //     $("#ve_q > option").each(function () {
+    //         if ($(this).attr('value') == v) {
+    //             $("#com_ad").html('<i class="fas fa-map-marker-alt"></i>' + $(this).attr('loc')).removeAttr('style');
+    //
+    //             if ($("#ve_p").val() !== null) {
+    //                 let pp = $("#ve_p").val(),
+    //                     pid = {
+    //                         '5000': 1,
+    //                         '6500': 2,
+    //                         '8500': 3,
+    //                         '12500': 4
+    //                     };
+    //                 if (pid[pp] === undefined) pp = '5000';
+    //                 let iep = $(this).attr('prc_' + pid[pp] + 'b');
+    //                 if (pid[pp] == 1) {
+    //                     iep = iep;
+    //                 } else if (animator[v] !== undefined) {
+    //                     iep = iep;
+    //                     console.log('аниматор4');
+    //                     $('#dy_ani').css('disabled', 'true');
+    //                 }
+    //
+    //                 if ($("#ve_p").val() != null) {
+    //                     if ($("#dy_photo").is(':checked')) {
+    //                         iep = parseInt(iep) + 2500;
+    //                     }
+    //                     if ($("#dy_lounge").is(':checked')) {
+    //                         iep = parseInt(iep) + 1500;
+    //                     }
+    //                 }
+    //                 if ((v == '1110' || v == '662') && $("#ve_p").val() == '5000') {
+    //                     $('#dy_ani').prop('checked', true);
+    //                     $('#dy_ani').prop('disabled', true);
+    //                 } else {
+    //                     if ($("#ve_p").val() == '5000') {
+    //                         $('#dy_ani').prop('checked', false);
+    //                         $('#dy_ani').prop('disabled', false);
+    //                     }
+    //                 }
+    //                 $(".pac_price").text(iep);
+    //             }
+    //         }
+    //     });
+    //
+    //     if (v == '670' || v == '1110') {
+    //         $("#ve_k").html(
+    //             '<option value="2">2 человека</option>' +
+    //             '<option value="3">3 человека</option>' +
+    //             '<option value="4">4 человека</option>' +
+    //             '<option value="5">5 человек</option>' +
+    //             '<option value="6">6 человек</option>' +
+    //             '<option value="7">7 человек</option>' +
+    //             '<option value="8">8 человек</option>'
+    //         );
+    //     } else if (v == '157') {
+    //         $("#ve_k").html(
+    //             '<option value="2">2 человека</option>' +
+    //             '<option value="3">3 человека</option>' +
+    //             '<option value="4">4 человека</option>' +
+    //             '<option value="5">5 человек</option>' +
+    //             '<option value="6">6 человек</option>' +
+    //             '<option value="7">7 человек</option>'
+    //         );
+    //     } else {
+    //         $("#ve_k").html(
+    //             '<option value="2">2 человека</option>' +
+    //             '<option value="3">3 человека</option>' +
+    //             '<option value="4">4 человека</option>' +
+    //             '<option value="5">5 человек</option>' +
+    //             '<option value="6">6 человек</option>'
+    //         );
+    //     }
+    //
+    //     $('#ve_k').change(function () {
+    //         console.log('изменение колличества человек!!!');
+    //         let time = $('#ve_v').val();
+    //         let qid = $("#ve_q").val();
+    //         time = time.split(':');
+    //         let day_value = $("#ve_d").val(), vib;
+    //         let dow = $('#ve_d').val();
+    //         dow = dow.split(".");
+    //         let day = "20" + dow[2] + "-" + dow[1] + "-" + dow[0];
+    //         day = new Date(day).getDay();
+    //         let date = $('#ve_d').val();
+    //         if (date_of_holydays.indexOf(date) !== -1) {
+    //             vib = 'v'
+    //         } else {
+    //             if ((day == 5 && time[0] > 16) || (day == 6 || day == 0)) {
+    //                 vib = 'v';
+    //             } else {
+    //                 vib = 'b'
+    //             }
+    //         }
+    //
+    //         let pid = {
+    //             '5000': 1,
+    //             '6500': 2,
+    //             '8500': 3,
+    //             '12500': 4
+    //         };
+    //         let amount = $(this).val();
+    //         let pack_id = $(this).parent().parent().parent().parent().parent().parent().find('#ve_p').val();
+    //         let iep = $('#ve_q option:selected').attr('prc_' + pid[pack_id] + vib);
+    //         if (amount == 7) {
+    //             iep = Number(iep) + 1000;
+    //         } else if (amount == 8) {
+    //             iep = Number(iep) + 2000;
+    //         } else {
+    //             iep = iep;
+    //         }
+    //         if ($('#ve_p').val() == '5000' && $('#dy_ani').prop('checked') && qid != 1110) {
+    //             iep = Number(iep) + 2000;
+    //         }
+    //         if (($('#ve_p').val() == '5000' || $('#ve_p').val() == '6500') && $('#dy_master_class').prop('checked')) {
+    //             iep = Number(iep) + 3500;
+    //         }
+    //         if (($('#ve_p').val() == '5000' || $('#ve_p').val() == '6500') && $('#dy_him').prop('checked')) {
+    //             iep = Number(iep) + 3500;
+    //         }
+    //         if ($('#dy_ani_p').prop('checked')) {
+    //             iep = Number(iep) + 3000;
+    //         }
+    //
+    //         if ($('#dy_big_launzh').prop('checked')) {
+    //             iep = Number(iep) + 2000;
+    //         }
+    //         $('.pac_price').html(iep);
+    //
+    //
+    //     });
+    //
+    //     let q_api = '/booking/' + $(this).val() + '/world_of_quest.json';
+    //     $.getJSON(q_api, function (data) {
+    //         json_data = {};
+    //         json_data = data;
+    //         let cd = '', i = 1;
+    //         data.forEach(function (e) {
+    //             if (i < 29) {
+    //                 if (cd == '' || cd != e.date) {
+    //                     i++;
+    //                     cd = e.date;
+    //                     let d = new Date(e.date),
+    //                         d_day = d.getDate() < 10 ? '0' + d.getDate() : d.getDate(),
+    //                         d_month = d.getMonth() < 9 ? '0' + (d.getMonth() + 1) : d.getMonth() + 1,
+    //                         d_year = d.getFullYear().toString().slice(2),
+    //                         full_date = d_day + '.' + d_month + '.' + d_year;
+    //
+    //                     let nac = '',
+    //                         dnn = d.getDay(),
+    //                         dnr = {
+    //                             '1': 'пн',
+    //                             '2': 'вт',
+    //                             '3': 'ср',
+    //                             '4': 'чт',
+    //                             '5': 'пт',
+    //                             '6': 'сб',
+    //                             '0': 'вс'
+    //                         };
+    //
+    //                     if (dnn == 6 || dnn == 0) {
+    //                         nac = 'class="nac" ';
+    //                     }
+    //                     if (holidays[e.date] !== undefined) {
+    //                         nac = 'class="nac" ';
+    //                     }
+    //                     $("#ve_d").removeAttr("disabled").append('<option ' + nac + 'utc="' + e.date + '" value="' + full_date + '">' + full_date + ' ' + dnr[dnn] + '</option>');
+    //                 }
+    //             }
+    //         });
+    //         $("#ve_d").removeAttr('disabled style').prev().removeAttr('style');
+    //         getQuestsTime(data);
+    //     });
+    //
+    // });
 
-        if (tinkoff_array.indexOf(tinkoff_quest) != -1) {
-
-            $('#button_d2').css('display', 'inline-block');
-            $('#button_d3').css('display', 'inline-block');
-
-        } else {
-            $('#button_d2').css('display', 'none');
-            $('#button_d3').css('display', 'none');
-        }
-
-        if (($('#ve_p').val() == '5000') || $('#ve_p').val() == '6500') $('#dy_master_class').removeAttr("checked");
-        if (($('#ve_p').val() == '5000') || $('#ve_p').val() == '6500') $('#dy_him').removeAttr("checked");
-        if ($(this).val() == '670') {
-            $('#dy_ani_p').parent().css('display', 'block');
-        } else {
-            $('#dy_ani_p').parent().css('display', 'none');
-        }
-
-        let quest = $(this).val();
-
-        if (quest == '670' || quest == '646' || quest == '680' || quest == '1110') {
-            $('#dy_big_launzh').parent().css('display', 'block');
-        } else {
-            $('#dy_big_launzh').parent().css('display', 'none');
-        }
-
-        $('#pirat-master').remove();
-        let v = $(this).val();
-
-        let pirat = '<li id="pirat-master"><input type="radio" id="mc_list_2" name="mc_list" value="Пиратский мастер-класс" value="Пиратский"><label for="mc_list_2"> пиратский мастер-класс</label></li>';
-
-        if (v == '15') $('.master_class').append(pirat);
-
-        if (v == '871' || v == '65' || v == '17') {
-            $('#anim').css('display', 'none');
-        } else {
-            $('#anim').css('display', 'inline');
-        }
-        if (
-            v == '17' ||
-            v == '65' ||
-            v == '871'
-        ) {
-            $("#ve_p > option").each(function () {
-                if (
-                    $(this).attr('value') == '6500' ||
-                    $(this).attr('value') == '8500' ||
-                    $(this).attr('value') == '12500'
-                ) {
-                    $(this).attr('disabled', '');
-                }
-            });
-        } else if (
-            v == '64') {
-            $("#ve_p > option").each(function () {
-                if (
-                    $(this).attr('value') == '8500' ||
-                    $(this).attr('value') == '12500'
-                ) {
-                    $(this).attr('disabled', '');
-                }
-            });
-        } else {
-            $("#ve_p > option").each(function () {
-                if (
-                    $(this).attr('value') == '6500' ||
-                    $(this).attr('value') == '8500' ||
-                    $(this).attr('value') == '12500'
-                ) {
-                    $(this).removeAttr('disabled');
-                }
-            });
-        }
-
-        $(this).prev().css('background', '#714417');
-
-        $(".error_message").remove();
-
-        $("#ve_d").html('<option value="">ВЫБЕРИТЕ ДАТУ</option>');
-        $("#ve_v").html('<option value="">ВЫБЕРИТЕ ВРЕМЯ</option>');
-        $("#ve_q > option").each(function () {
-            if ($(this).attr('value') == v) {
-                $("#com_ad").html('<i class="fas fa-map-marker-alt"></i>' + $(this).attr('loc')).removeAttr('style');
-
-                if ($("#ve_p").val() !== null) {
-                    let pp = $("#ve_p").val(),
-                        pid = {
-                            '5000': 1,
-                            '6500': 2,
-                            '8500': 3,
-                            '12500': 4
-                        };
-                    if (pid[pp] === undefined) pp = '5000';
-                    let iep = $(this).attr('prc_' + pid[pp] + 'b');
-                    if (pid[pp] == 1) {
-                        iep = iep;
-                    } else if (animator[v] !== undefined) {
-                        iep = iep;
-                        console.log('аниматор4');
-                        $('#dy_ani').css('disabled', 'true');
-                    }
-
-                    if ($("#ve_p").val() != null) {
-                        if ($("#dy_photo").is(':checked')) {
-                            iep = parseInt(iep) + 2500;
-                        }
-                        if ($("#dy_lounge").is(':checked')) {
-                            iep = parseInt(iep) + 1500;
-                        }
-                    }
-                    if ((v == '1110' || v == '662') && $("#ve_p").val() == '5000') {
-                        $('#dy_ani').prop('checked', true);
-                        $('#dy_ani').prop('disabled', true);
-                    } else {
-                        if ($("#ve_p").val() == '5000') {
-                            $('#dy_ani').prop('checked', false);
-                            $('#dy_ani').prop('disabled', false);
-                        }
-                    }
-                    $(".pac_price").text(iep);
-                }
-            }
-        });
-
-        if (v == '670' || v == '1110') {
-            $("#ve_k").html(
-                '<option value="2">2 человека</option>' +
-                '<option value="3">3 человека</option>' +
-                '<option value="4">4 человека</option>' +
-                '<option value="5">5 человек</option>' +
-                '<option value="6">6 человек</option>' +
-                '<option value="7">7 человек</option>' +
-                '<option value="8">8 человек</option>'
-            );
-        } else if (v == '157') {
-            $("#ve_k").html(
-                '<option value="2">2 человека</option>' +
-                '<option value="3">3 человека</option>' +
-                '<option value="4">4 человека</option>' +
-                '<option value="5">5 человек</option>' +
-                '<option value="6">6 человек</option>' +
-                '<option value="7">7 человек</option>'
-            );
-        } else {
-            $("#ve_k").html(
-                '<option value="2">2 человека</option>' +
-                '<option value="3">3 человека</option>' +
-                '<option value="4">4 человека</option>' +
-                '<option value="5">5 человек</option>' +
-                '<option value="6">6 человек</option>'
-            );
-        }
-
-        $('#ve_k').change(function () {
-            console.log('изменение колличества человек!!!');
-            let time = $('#ve_v').val();
-            let qid = $("#ve_q").val();
-            time = time.split(':');
-            let day_value = $("#ve_d").val(), vib;
-            let dow = $('#ve_d').val();
-            dow = dow.split(".");
-            let day = "20" + dow[2] + "-" + dow[1] + "-" + dow[0];
-            day = new Date(day).getDay();
-            let date = $('#ve_d').val();
-            if (date_of_holydays.indexOf(date) !== -1) {
-                vib = 'v'
-            } else {
-                if ((day == 5 && time[0] > 16) || (day == 6 || day == 0)) {
-                    vib = 'v';
-                } else {
-                    vib = 'b'
-                }
-            }
-
-            let pid = {
-                '5000': 1,
-                '6500': 2,
-                '8500': 3,
-                '12500': 4
-            };
-            let amount = $(this).val();
-            let pack_id = $(this).parent().parent().parent().parent().parent().parent().find('#ve_p').val();
-            let iep = $('#ve_q option:selected').attr('prc_' + pid[pack_id] + vib);
-            if (amount == 7) {
-                iep = Number(iep) + 1000;
-            } else if (amount == 8) {
-                iep = Number(iep) + 2000;
-            } else {
-                iep = iep;
-            }
-            if ($('#ve_p').val() == '5000' && $('#dy_ani').prop('checked') && qid != 1110) {
-                iep = Number(iep) + 2000;
-            }
-            if (($('#ve_p').val() == '5000' || $('#ve_p').val() == '6500') && $('#dy_master_class').prop('checked')) {
-                iep = Number(iep) + 3500;
-            }
-            if (($('#ve_p').val() == '5000' || $('#ve_p').val() == '6500') && $('#dy_him').prop('checked')) {
-                iep = Number(iep) + 3500;
-            }
-            if ($('#dy_ani_p').prop('checked')) {
-                iep = Number(iep) + 3000;
-            }
-
-            if ($('#dy_big_launzh').prop('checked')) {
-                iep = Number(iep) + 2000;
-            }
-            $('.pac_price').html(iep);
-
-
-        });
-
-        let q_api = '/booking/' + $(this).val() + '/world_of_quest.json';
-        $.getJSON(q_api, function (data) {
-            json_data = {};
-            json_data = data;
-            let cd = '', i = 1;
-            data.forEach(function (e) {
-                if (i < 29) {
-                    if (cd == '' || cd != e.date) {
-                        i++;
-                        cd = e.date;
-                        let d = new Date(e.date),
-                            d_day = d.getDate() < 10 ? '0' + d.getDate() : d.getDate(),
-                            d_month = d.getMonth() < 9 ? '0' + (d.getMonth() + 1) : d.getMonth() + 1,
-                            d_year = d.getFullYear().toString().slice(2),
-                            full_date = d_day + '.' + d_month + '.' + d_year;
-
-                        let nac = '',
-                            dnn = d.getDay(),
-                            dnr = {
-                                '1': 'пн',
-                                '2': 'вт',
-                                '3': 'ср',
-                                '4': 'чт',
-                                '5': 'пт',
-                                '6': 'сб',
-                                '0': 'вс'
-                            };
-
-                        if (dnn == 6 || dnn == 0) {
-                            nac = 'class="nac" ';
-                        }
-                        if (holidays[e.date] !== undefined) {
-                            nac = 'class="nac" ';
-                        }
-                        $("#ve_d").removeAttr("disabled").append('<option ' + nac + 'utc="' + e.date + '" value="' + full_date + '">' + full_date + ' ' + dnr[dnn] + '</option>');
-                    }
-                }
-            });
-            $("#ve_d").removeAttr('disabled style').prev().removeAttr('style');
-            getQuestsTime(data);
-        });
-
-    });
-
+    /*-----------------------------------------------------------------*/
 
     $("#ve_d").change(function () {
 
@@ -1216,8 +1215,6 @@ $(document).ready(function () {
     });
 
     $(".button_order").click(function () {
-
-
         let tar = $(this).attr('prc');
         form_up(tar, '');
     });
@@ -1594,4 +1591,143 @@ $(document).ready(function () {
                 $(this).attr('class', 'ho');
         });
     });
+
+    function phf(id) {
+        $(id).attr('placeholder', '');
+    }
+
+    function phb(id, val) {
+        $(id).attr('placeholder', val);
+    }
+
+
+    $(function () {
+
+        var $allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='//www.youtube.com'], object, embed"),
+            $fluidEl = $(".s_vid");
+        $allVideos.each(function () {
+            $(this).attr('data-aspectRatio', this.height / this.width).removeAttr('height width');
+        });
+
+        $(window).resize(function () {
+
+            // header
+            $("body").removeAttr('style');
+            $('.right_menu').removeAttr('style');
+
+            // video top resize
+            var newWidth = $fluidEl.width();
+            $allVideos.each(function () {
+                var $el = $(this);
+                $el
+                    .width(newWidth)
+                    .height(newWidth * $el.attr('data-aspectRatio'));
+                var newHeight = newWidth * $el.attr('data-aspectRatio');
+                $("#video_but").attr('style', '--box-height: ' + newHeight + 'px');
+            });
+
+            // leadform resize
+            var wh = $(window).height(), ww = $(window).width();
+            if (wh <= 780) $("#order_form > div").addClass('lip');
+            else $("#order_form > div").removeAttr('class');
+
+            // lounge <p> height
+            if (ww <= 920) {
+                $(".l_desc > div").each(function () {
+                    $(this).parent().attr('style', '--height: ' + ($(this).height() + 54) + 'px'); // 54 т.к. 14px padding + 40px
+                });
+            }
+
+        }).resize();
+
+    });
+
+    var jssor_1_options = {
+        $Idle: 2000,
+        $SlideEasing: $Jease$.$InOutSine,
+        $DragOrientation: 3,
+        $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+        },
+        $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+        }
+    };
+
+    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+    //make sure to clear margin of the slider container element
+    jssor_1_slider.$Elmt.style.margin = "";
+
+    /*#region responsive code begin*/
+
+    var MAX_WIDTH = 3000;
+    var MAX_HEIGHT = 3000;
+    var MAX_BLEEDING = 0.128;
+
+    function ScaleSlider() {
+        var containerElement = jssor_1_slider.$Elmt.parentNode;
+        var containerWidth = containerElement.clientWidth;
+
+        if (containerWidth) {
+            var originalWidth = jssor_1_slider.$OriginalWidth();
+            var originalHeight = jssor_1_slider.$OriginalHeight();
+
+            var containerHeight = containerElement.clientHeight || originalHeight;
+
+            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+            var expectedHeight = Math.min(MAX_HEIGHT || containerHeight, containerHeight);
+
+            //scale the slider to expected size
+            jssor_1_slider.$ScaleSize(expectedWidth, expectedHeight, MAX_BLEEDING);
+
+            //position slider at center in vertical orientation
+            jssor_1_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 2) + "px";
+
+            //position slider at center in horizontal orientation
+            jssor_1_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 2) + "px";
+        } else {
+            window.setTimeout(ScaleSlider, 30);
+        }
+    }
+
+    function OnOrientationChange() {
+        ScaleSlider();
+        window.setTimeout(ScaleSlider, 800);
+    }
+
+    ScaleSlider();
+
+    $(window).bind("load", ScaleSlider);
+    $(window).bind("resize", ScaleSlider);
+    $(window).bind("orientationchange", OnOrientationChange);
+    /*#endregion responsive code end*/
+
+    $(".lounge_wrap > div").click(function () {
+        var lounge_index = $(this).index() + 1;
+
+        $("body").css({
+            'height': '100vh',
+            'overflow': 'hidden'
+        });
+        $("#lounge_desk").html('<h1>' + $(this).attr('loc') + '</h1>');
+        $("#lounge_desk").append('<p>' + $(this).find('.sqst').text() + '</p>');
+
+        $("#jssor_1 > div:first-child > div > div:last-child > div:nth-child(1) > div:first-child > img")
+            .attr('src', '/sites/all/themes/main/img/imgdr/allp/lounge_' + lounge_index + '_poto_1.jpg');
+        $("#jssor_1 > div:first-child > div > div:last-child > div:nth-child(2) > div:first-child > img")
+            .attr('src', '/sites/all/themes/main/img/imgdr/allp/lounge_' + lounge_index + '_poto_2.jpg');
+        $("#jssor_1 > div:first-child > div > div:last-child > div:nth-child(3) > div:first-child > img")
+            .attr('src', '/sites/all/themes/main/img/imgdr/allp/lounge_' + lounge_index + '_poto_3.jpg');
+
+        $(".lounge_full").css('display', 'block');
+
+    });
+
+    $("#close_button").click(function () {
+        $(".lounge_full").css('display', 'none');
+        $("body").removeAttr('style');
+    });
+
+
 });
