@@ -1185,6 +1185,10 @@ footer{
         padding-bottom: 5px;
         border: 5px;
     }
+    
+    .additional_section__slider_container{
+        background: #ffffff;
+    }
 
     .additional_section__slider_img{
         width: 100%;
