@@ -1,4 +1,4 @@
-<html lang="ru">
+<html lang="ru" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -266,231 +266,258 @@
                 <div class="types_holidays__description">
                     Время 2 часа (1 час игра в квест, 1 час аренда лаунжа)
                 </div>
-<div id="app">
-                <div class="types_holidays__container">
-                    <div class="types_holidays__item">
-                        <div class="types_holidays__item_img hit"></div>
-                        <div class="types_holidays__item_title">Хит</div>
-                        <div class="types_holidays__item_time">2 часа</div>
-                        <div class="types_holidays__item_price">от <span>4 900</span> р</div>
-                        <div class="types_holidays__descriptions">
-                            <ul class="types_holidays__ul">
-                                <li class="types_holidays__li grey circle">Игра в квест</li>
-                                <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
-                                </li>
-                                <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                                <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                                <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                                <li class="types_holidays__li grey no-circle"></li>
-                                <li class="types_holidays__li white no-circle"></li>
-                                <li class="types_holidays__li grey no-circle"></li>
-                            </ul>
-                        </div>
-                        <a class="button_order" href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn" @click="selectTypeHolidays(1)">Забронировать</div>
-                        </a>
-                    </div>
-
-
-                    <div class="types_holidays__item">
-                        <div class="types_holidays__item_img optima"></div>
-                        <div class="types_holidays__item_title">Оптима</div>
-                        <div class="types_holidays__item_time">2 часа</div>
-                        <div class="types_holidays__item_price">от <span>6 900</span> р</div>
-                        <div class="types_holidays__descriptions">
-                            <ul class="types_holidays__ul">
-                                <li class="types_holidays__li grey circle">Игра в квест</li>
-                                <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
-                                </li>
-                                <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                                <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                                <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                                <li class="types_holidays__li grey circle">Аниматор в квесте</li>
-                                <li class="types_holidays__li white no-circle"></li>
-                                <li class="types_holidays__li grey no-circle"></li>
-                            </ul>
-                        </div>
-                        <a  href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" @click="selectTypeHolidays(2)">Забронировать</div>
-                        </a>
-                    </div>
-
-
-                    <div class="types_holidays__item">
-                        <div class="types_holidays__item_img maximum"></div>
-                        <div class="types_holidays__item_title">Максимум</div>
-                        <div class="types_holidays__item_time">2 часа</div>
-                        <div class="types_holidays__item_price">от <span>9 900</span> р</div>
-                        <div class="types_holidays__descriptions">
-                            <ul class="types_holidays__ul">
-                                <li class="types_holidays__li grey circle">Игра в квест</li>
-                                <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
-                                </li>
-                                <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                                <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                                <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                                <li class="types_holidays__li grey circle">Аниматор в квесте</li>
-                                <li class="types_holidays__li white circle">Мастер-класс на выбор</li>
-                                <li class="types_holidays__li grey no-circle"></li>
-                            </ul>
-                        </div>
-                        <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" @click="selectTypeHolidays(3)">Забронировать</div>
-                        </a>
-                    </div>
-
-                    <div class="types_holidays__item">
-                        <div class="types_holidays__item_img allinclusive"></div>
-                        <div class="types_holidays__item_title">Все включено</div>
-                        <div class="types_holidays__item_time">2 часа</div>
-                        <div class="types_holidays__item_price">от <span>12 900</span> р</div>
-                        <div class="types_holidays__descriptions">
-                            <ul class="types_holidays__ul">
-                                <li class="types_holidays__li grey circle">Игра в квест</li>
-                                <li class="types_holidays__li circle">Приглашения всем участникам</li>
-                                <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1 час
-                                </li>
-                                <li class="types_holidays__li circle">Торт в подарок имениннику</li>
-                                <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
-                                <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам</li>
-                                <li class="types_holidays__li grey circle">Аниматор в квесте</li>
-                                <li class="types_holidays__li circle">Мастер-класс или Химическое<br>
-                                    шоу на выбор
-                                </li>
-                                <li class="types_holidays__li grey circle">Профессиональный фотограф</li>
-                            </ul>
-                        </div>
-                        <a href="#booking" rel="modal:open">
-                            <div class="types_holidays__btn button_order" @click="selectTypeHolidays(4)">Забронировать</div>
-                        </a>
-                    </div>
-                </div>
-    /*---------------------------------------BOOKING MODAL SECTION------------------------------------------------------*/
-
-    <div id="booking" class="modal booking_modal">
-        <div class="booking_left">
-            <div class="modal_header"></div>
-            <div class="modal_left__content">
-                <div class="modal_wrapper modal_overflay">
-                    <div class="modal_scroll__container">
-                        <div class="left_items__title">Выберите квест</div>
-                        <div class="left_items__content">
-                            <div class="left_items__container">
-                                <label>
-                                    <select class="left_items__item left_items__item_select" v-model="selectedTypeHolidays">
-                                        <option value="0">Выберите пакет</option>
-                                        <option :value="typeHolidays.id" v-for="(typeHolidays,key) in typesHolidays">{{typeHolidays.title}}</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <select class="left_items__item left_items__item_select">
-                                        <option value="0">Выберите квест</option>
-                                    </select>
-                                </label>
+                <div id="app">
+                    <div class="types_holidays__container">
+                        <div class="types_holidays__item">
+                            <div class="types_holidays__item_img hit"></div>
+                            <div class="types_holidays__item_title">Хит</div>
+                            <div class="types_holidays__item_time">2 часа</div>
+                            <div class="types_holidays__item_price">от <span>4 900</span> р</div>
+                            <div class="types_holidays__descriptions">
+                                <ul class="types_holidays__ul">
+                                    <li class="types_holidays__li grey circle">Игра в квест</li>
+                                    <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                                    <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1
+                                        час
+                                    </li>
+                                    <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                                    <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                                    <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам
+                                    </li>
+                                    <li class="types_holidays__li grey no-circle"></li>
+                                    <li class="types_holidays__li white no-circle"></li>
+                                    <li class="types_holidays__li grey no-circle"></li>
+                                </ul>
                             </div>
-                            <div class="left_items__title">Выберите квест</div>
-                            <div class="left_items__container">
-                                <label>
-                                    <select class="left_items__item left_items__item_select">
-                                        <option value="0">Выберите дату</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <select class="left_items__item left_items__item_select">
-                                        <option value="0">Выберите время</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <select class="left_items__item left_items__item_select">
-                                        <option value="0">Сколько вас было человек</option>
-                                    </select>
-                                </label>
-                                <input class="left_items__item" type="text" placeholder="Ваше имя">
-                                <input class="left_items__item" type="text" placeholder="Телефон">
-                                <input class="left_items__item" type="text" placeholder="Электронная почта">
-                            </div>
+                            <a class="button_order" href="#booking" rel="modal:open">
+                                <div class="types_holidays__btn" @click="selectTypeHolidays(1)">Забронировать</div>
+                            </a>
+                        </div>
 
-                            <div class="modal__description">
-                                <p><span class="star">*</span>Gредоплата составляет 3 000 руб.<span
-                                            class="details modal_details">Подробнее</span></p>
-                                <p><span class="star">*</span>Стоимость пакета зависит от набора услуг и выбранного квеста
-                                </p>
-                                <p><span class="star">*</span>Стоимость пакета в будни и выходные может отличаться</p>
-                                <p><span class="star">*</span>При покупке пакетов другие скидки не действуют</p>
+
+                        <div class="types_holidays__item">
+                            <div class="types_holidays__item_img optima"></div>
+                            <div class="types_holidays__item_title">Оптима</div>
+                            <div class="types_holidays__item_time">2 часа</div>
+                            <div class="types_holidays__item_price">от <span>6 900</span> р</div>
+                            <div class="types_holidays__descriptions">
+                                <ul class="types_holidays__ul">
+                                    <li class="types_holidays__li grey circle">Игра в квест</li>
+                                    <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                                    <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1
+                                        час
+                                    </li>
+                                    <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                                    <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                                    <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам
+                                    </li>
+                                    <li class="types_holidays__li grey circle">Аниматор в квесте</li>
+                                    <li class="types_holidays__li white no-circle"></li>
+                                    <li class="types_holidays__li grey no-circle"></li>
+                                </ul>
                             </div>
+                            <a href="#booking" rel="modal:open">
+                                <div class="types_holidays__btn button_order" @click="selectTypeHolidays(2)">
+                                    Забронировать
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="types_holidays__item">
+                            <div class="types_holidays__item_img maximum"></div>
+                            <div class="types_holidays__item_title">Максимум</div>
+                            <div class="types_holidays__item_time">2 часа</div>
+                            <div class="types_holidays__item_price">от <span>9 900</span> р</div>
+                            <div class="types_holidays__descriptions">
+                                <ul class="types_holidays__ul">
+                                    <li class="types_holidays__li grey circle">Игра в квест</li>
+                                    <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                                    <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1
+                                        час
+                                    </li>
+                                    <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                                    <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                                    <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам
+                                    </li>
+                                    <li class="types_holidays__li grey circle">Аниматор в квесте</li>
+                                    <li class="types_holidays__li white circle">Мастер-класс на выбор</li>
+                                    <li class="types_holidays__li grey no-circle"></li>
+                                </ul>
+                            </div>
+                            <a href="#booking" rel="modal:open">
+                                <div class="types_holidays__btn button_order" @click="selectTypeHolidays(3)">
+                                    Забронировать
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="types_holidays__item">
+                            <div class="types_holidays__item_img allinclusive"></div>
+                            <div class="types_holidays__item_title">Все включено</div>
+                            <div class="types_holidays__item_time">2 часа</div>
+                            <div class="types_holidays__item_price">от <span>12 900</span> р</div>
+                            <div class="types_holidays__descriptions">
+                                <ul class="types_holidays__ul">
+                                    <li class="types_holidays__li grey circle">Игра в квест</li>
+                                    <li class="types_holidays__li circle">Приглашения всем участникам</li>
+                                    <li class="types_holidays__li grey circle">Лаунж-зона для чаепития и игр<br> на 1
+                                        час
+                                    </li>
+                                    <li class="types_holidays__li circle">Торт в подарок имениннику</li>
+                                    <li class="types_holidays__li grey circle">Праздничное оформление зала</li>
+                                    <li class="types_holidays__li circle">Цифровое фото на память всем<br> участникам
+                                    </li>
+                                    <li class="types_holidays__li grey circle">Аниматор в квесте</li>
+                                    <li class="types_holidays__li circle">Мастер-класс или Химическое<br>
+                                        шоу на выбор
+                                    </li>
+                                    <li class="types_holidays__li grey circle">Профессиональный фотограф</li>
+                                </ul>
+                            </div>
+                            <a href="#booking" rel="modal:open">
+                                <div class="types_holidays__btn button_order" @click="selectTypeHolidays(4)">
+                                    Забронировать
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="payment_container">
-                <div class="payment_buttons__container">
-                    <button class="btn_payment">Забронировать</button>
-                    <button class="btn_payment">Предоплата</button>
-                    <button class="btn_payment btn_red">Оплатить</button>
-                </div>
-                <div class="payment_details">
-                    <p>Нажимая на кнопку ЗАБРОНИРОВАТЬ/ПРЕДОПЛАТА/ОПЛАТИТЬ,
-                        я принимаю правила и условия<br> обслуживания,
-                        политики конфидециальности и даю согласие на обработку персональных данных.</p>
-                </div>
-            </div>
-        </div>
-        <div class="booking_right">
-            <div class="modal_header"></div>
-            <div class="modal_right__content modal_wrapper">
-                <div class="modal_scroll__container">
-                    <div class="right__title">СОСТАВ ПАКЕТ «ОПТИМА»</div>
-                    <ul class="additional_items">
-                        <li class="additional">
-                            Игра в квест
-                        </li>
-                        <li class="additional">
-                            Лаунж-зона для чаепития и<br>
-                            игр на 1 час
-                        </li>
-                        <li class="additional">
-                            Праздничное оформление<br>
-                            зала
-                        </li>
-                        <li class="additional">
-                            Цифровое фото на память всем<br>
-                            участникам
-                        </li>
-                        <li class="additional_active">
-                            <input class="additional_option" type="checkbox" id="additional__tort">
-                            <label id="label__tort" class="additional_option__label" for="additional__tort">
-                                Торт в подарок имениннику
-                            </label>
-                        </li>
-                        <li class="additional_active">
-                            <input class="additional_option" type="checkbox" id="additional__animator">
-                            <label class="additional_option__label" id="label__animator" for="additional__animator">
-                                Торт в подарок имениннику
-                            </label>
-                        </li>
-                        <li class="additional_active">
-                            <input class="additional_option" type="checkbox" id="additional__master_class">
-                            <label id="label__master_class" class="additional_option__label" for="additional__master_class">
-                                Торт в подарок имениннику
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="payment_container">
-                <div class="payment_left__title">Итоговая стоимость:</div>
-                <div class="payment_left__description">13 500 P</div>
-            </div>
-        </div>
-        <a href="#" rel="modal:close">Close</a>
-    </div>
+                    /*---------------------------------------BOOKING MODAL
+                    SECTION------------------------------------------------------*/
 
-    /*-----------------------------------------------------------------------------------------------------*/
+                    <div id="booking" class="modal booking_modal">
+                        <div class="booking_left">
+                            <div class="modal_header"></div>
+                            <div class="modal_left__content">
+                                <div class="modal_wrapper modal_overflay">
+                                    <div class="modal_scroll__container">
+<!--                                        <div class="left_items__title">Выберите квест</div>-->
+                                        <div class="left_items__title">{{ selectedTypeHolidays }}</div>
+                                        <div class="left_items__content">
+                                            <div class="left_items__container">
+                                                <label>
+                                                    <select class="left_items__item left_items__item_select"
+                                                            v-model="selectedTypeHolidays">
+                                                        <option v-bind:value="0">Выберите пакет</option>
+                                                        <option  v-for="typeHolidays in typesHolidays" v-bind:value="typeHolidays.">
+                                                            {{typeHolidays.title}}
+                                                        </option>
+                                                    </select>
+                                                </label>
+                                                <label>
+                                                    <select class="left_items__item left_items__item_select">
+                                                        <option value="0">Выберите квест</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="left_items__title">Выберите квест</div>
+                                            <div class="left_items__container">
+                                                <label>
+                                                    <select class="left_items__item left_items__item_select">
+                                                        <option value="0">Выберите дату</option>
+                                                    </select>
+                                                </label>
+                                                <label>
+                                                    <select class="left_items__item left_items__item_select">
+                                                        <option value="0">Выберите время</option>
+                                                    </select>
+                                                </label>
+                                                <label>
+                                                    <select class="left_items__item left_items__item_select">
+                                                        <option value="0">Сколько вас было человек</option>
+                                                    </select>
+                                                </label>
+                                                <input class="left_items__item" type="text" placeholder="Ваше имя">
+                                                <input class="left_items__item" type="text" placeholder="Телефон">
+                                                <input class="left_items__item" type="text"
+                                                       placeholder="Электронная почта">
+                                            </div>
 
-</div>
+                                            <div class="modal__description">
+                                                <p><span class="star">*</span>Gредоплата составляет 3 000 руб.<span
+                                                            class="details modal_details">Подробнее</span></p>
+                                                <p><span class="star">*</span>Стоимость пакета зависит от набора услуг и
+                                                    выбранного квеста
+                                                </p>
+                                                <p><span class="star">*</span>Стоимость пакета в будни и выходные может
+                                                    отличаться</p>
+                                                <p><span class="star">*</span>При покупке пакетов другие скидки не
+                                                    действуют</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment_container">
+                                <div class="payment_buttons__container">
+                                    <button class="btn_payment">Забронировать</button>
+                                    <button class="btn_payment">Предоплата</button>
+                                    <button class="btn_payment btn_red">Оплатить</button>
+                                </div>
+                                <div class="payment_details">
+                                    <p>Нажимая на кнопку ЗАБРОНИРОВАТЬ/ПРЕДОПЛАТА/ОПЛАТИТЬ,
+                                        я принимаю правила и условия<br> обслуживания,
+                                        политики конфидециальности и даю согласие на обработку персональных данных.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking_right">
+                            <div class="modal_header"></div>
+                            <div class="modal_right__content modal_wrapper">
+                                <div class="modal_scroll__container">
+                                    <div class="right__title">СОСТАВ ПАКЕТ «ОПТИМА»</div>
+                                    <ul class="additional_items">
+                                        <li class="additional">
+                                            Игра в квест
+                                        </li>
+                                        <li class="additional">
+                                            Лаунж-зона для чаепития и<br>
+                                            игр на 1 час
+                                        </li>
+                                        <li class="additional">
+                                            Праздничное оформление<br>
+                                            зала
+                                        </li>
+                                        <li class="additional">
+                                            Цифровое фото на память всем<br>
+                                            участникам
+                                        </li>
+                                        <li class="additional_active">
+                                            <input class="additional_option" type="checkbox" id="additional__tort">
+                                            <label id="label__tort" class="additional_option__label"
+                                                   for="additional__tort">
+                                                Торт в подарок имениннику
+                                            </label>
+                                        </li>
+                                        <li class="additional_active">
+                                            <input class="additional_option" type="checkbox" id="additional__animator">
+                                            <label class="additional_option__label" id="label__animator"
+                                                   for="additional__animator">
+                                                Торт в подарок имениннику
+                                            </label>
+                                        </li>
+                                        <li class="additional_active">
+                                            <input class="additional_option" type="checkbox"
+                                                   id="additional__master_class">
+                                            <label id="label__master_class" class="additional_option__label"
+                                                   for="additional__master_class">
+                                                Торт в подарок имениннику
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="payment_container">
+                                <div class="payment_left__title">Итоговая стоимость:</div>
+                                <div class="payment_left__description">13 500 P</div>
+                            </div>
+                        </div>
+                        <a href="#" rel="modal:close">Close</a>
+                    </div>
+
+                    /*-----------------------------------------------------------------------------------------------------*/
+
+                </div>
             </div>
 
             /*-----------------------------------------------------------------------------------------------------*/
@@ -1519,9 +1546,6 @@
     /*-----------------------------------------------------------------------------------------------------*/
 
 </div>
-
-
-
 
 
 /*-------------------------------------------FOOTER------------------------------------------------------*/
