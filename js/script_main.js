@@ -530,6 +530,9 @@ $(document).ready(function () {
             $(".error_message").remove();
             let pack_id = $(this).val();
             $(".button_order").each(function () {
+
+                console.log('Форма работает');
+
                 if ($(this).attr('prc') == pack_id) {
                     if ($("#ve_q").val() !== null) {
                         let v = $("#ve_q").val();
@@ -1215,6 +1218,8 @@ $(document).ready(function () {
     });
 
     $(".button_order").click(function () {
+
+        console.log('Форма работает');
         let tar = $(this).attr('prc');
         form_up(tar, '');
     });
