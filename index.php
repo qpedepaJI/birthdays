@@ -391,7 +391,7 @@
                             <div class="modal_left__content">
                                 <div class="modal_wrapper modal_overflay">
                                     <div class="modal_scroll__container">
-<!--                                        <div class="left_items__title">Выберите квест</div>-->
+                                        <!--                                        <div class="left_items__title">Выберите квест</div>-->
                                         <div class="left_items__title">{{ selectedTypeHolidays }}</div>
                                         <div class="left_items__content">
                                             <div class="left_items__container">
@@ -399,7 +399,7 @@
                                                     <select class="left_items__item left_items__item_select"
                                                             v-model="selectedTypeHolidays">
                                                         <option v-bind:value="0">Выберите пакет</option>
-                                                        <option  v-for="typeHolidays in typesHolidays" v-bind:value="typeHolidays.">
+                                                        <option  v-for="typeHolidays in typesHolidays" v-bind:value="typeHolidays.id">
                                                             {{typeHolidays.title}}
                                                         </option>
                                                     </select>

@@ -502,7 +502,11 @@ new Vue({
 
     methods: {
         selectTypeHolidays:function(id){
-                this.selectedTypeHolidays = id;
+            this.selectedTypeHolidays = id;
         },
+
+        changeSelect:function(event){
+            this.selectedTypeHolidays = event;
+        }
     }
 });
